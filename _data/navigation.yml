@@ -1,10 +1,12 @@
 # main links
 main:
-   - title: "About"
-     url: https://sean-parkk.github.io/seanparkk/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "Home"
+    url: https://sean-parkk.github.io/seanparkk/
+  - title: "Projects"
+     url: /projects
+  - title: "Diary"
+    url: /diary
+# - title: "titlename"
+#   url: /siteurl
+  - title: "About"
+    url: /about
