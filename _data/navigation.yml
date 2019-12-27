@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: https://sean-parkk.github.io/seanparkk/
+  # - title: "Home"
+  #   url: https://sean-parkk.github.io/seanparkk/
   - title: "Projects"
      url: /projects
   - title: "Diary"
