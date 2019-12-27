@@ -2,11 +2,11 @@
 main:
   # - title: "Home"
   #   url: https://sean-parkk.github.io/seanparkk/
+  - title: "About"
+    url: /about
   - title: "Projects"
-     url: /projects
+    url: /projects
   - title: "Diary"
     url: /diary
 # - title: "titlename"
 #   url: /siteurl
-  - title: "About"
-    url: /about
