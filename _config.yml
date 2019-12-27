@@ -20,7 +20,7 @@ title                    : "잠들기 전에 - To be data analyst"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Sean"
-description              : "데이터 분석가가 되기 위한 스텝들"
+description              : # "데이터 분석가가 되기 위한 스텝들"
 url                      : #"https://sean-parkk.github.io/seanparkk"
 baseurl                  : ""
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
