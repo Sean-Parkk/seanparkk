@@ -8,5 +8,5 @@ main:
     url: /categories/projects
   - title: "Diary"
     url: /categories/diary
-# - title: "titlename"
-#   url: /siteurl
+-  title: "Categories"
+    url: /categories
