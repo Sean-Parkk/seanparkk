@@ -1,9 +1,9 @@
 ---
 title: "Diary"
-permalink: /categories/diary
+permalink: /diary
 layout: category
 author_profile: true
-taxonomy: Diary
+taxonomy: diary
 ---
 
 프로젝트 외 각종 기록들
