@@ -19,8 +19,9 @@ tags:
 
 코딩 도장 3단계 문제까지 푸는 것이 목표이며, 아래에 계속 업데이트 할 예정이다._(계정: Sean)_
 * * *
+
 코딩 완료 목록
--------
+-----
 * [[lv.2] CamelCase를 Pothole_case 로 바꾸기!](http://codingdojang.com/scode/484?answer=20383#answer_20383)
 * [[lv.2] 문자열 압축하기](http://codingdojang.com/scode/465?answer=20305#answer_20305)
 * [[lv.2] 3n+1 Problem](http://codingdojang.com/scode/409?answer=20287#answer_20287)
