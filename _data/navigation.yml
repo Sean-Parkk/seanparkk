@@ -5,8 +5,8 @@ main:
   - title: "About"
     url: /about
   - title: "Projects"
-    url: /projects
+    url: /categories/projects
   - title: "Diary"
-    url: /diary
+    url: /categories/diary
 # - title: "titlename"
 #   url: /siteurl
