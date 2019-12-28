@@ -20,10 +20,10 @@ tags:
 코딩 도장 3단계 문제까지 푸는 것이 목표이며, 아래에 계속 업데이트 할 예정이다.  
 * * *
 
-1. [Multiples of 3 and 5]( #Multiples-of-3-and-5)
+1. [Multiples of 3 and 5]( #multiples-of-3-and-5)
 
 
-## Multiples of 3 and 5
+## multiples of 3 and 5
 >n = 1
 while n < 1000:
   if n % 3 == 0 or n % 5 == 0:
