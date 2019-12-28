@@ -19,12 +19,15 @@ tags:
 
 코딩 도장 3단계 문제까지 푸는 것이 목표이며, 아래에 계속 업데이트 할 예정이다.  
 * * *
+코딩 목차
+-----
+1. [lv.1 Multiples of 3 and 5 ]( #multiples-of-3-and-5)
 
-1. [Multiples of 3 and 5]( #multiples-of-3-and-5)
 
+
+* * *
+## multiples of 3 and 5
 10미만의 자연수에서 3과 5의 배수를 구하면 3,5,6,9이다. 이들의 총합은 23이다. 1000미만의 자연수에서 3,5의 배수의 총합을 구하라.
-
-#### multiples of 3 and 5
 >n = 1  
 while n < 1000:  
 &nbsp;&nbsp;&nbsp;&nbsp;  if n % 3 == 0 or n % 5 == 0:  
