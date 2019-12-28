@@ -1,6 +1,6 @@
 ---
 title: "Project"
-permalink: /project
+permalink: /projects
 layout: category
 author_profile: true
 taxonomy: project
