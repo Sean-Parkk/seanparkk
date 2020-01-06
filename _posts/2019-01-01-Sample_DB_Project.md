@@ -25,7 +25,7 @@ Python을 배우고, Kaggle 튜토리얼을 해보며 실제 비즈니스에서 
 
 복잡한 코드를 짜서 만들기보다는, random 모듈을 활용하여 index들을 구성하였다. index별로 나름의 조건을 설정하여 데이터를 생성하였으며, 총 5만개의 데이터를 생성하였다.  
 
-![Image_](./assets/images/Making_SampleDB_image.png)
+![Image_](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/Making_SampleDB_image.png?raw=true)
 *우여곡절 끝에 만들어진 내 첫 고객님들..!*
 
 ****
