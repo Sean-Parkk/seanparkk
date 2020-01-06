@@ -22,6 +22,7 @@ tags:
 
 코딩 완료 목록
 -----
+* [[lv.2] 리스트 회전 - 20.01.06](http://codingdojang.com/scode/400?answer=20480#answer_20480)
 * [[lv.2] 타노스의 핑거스냅 - 19.12.30](http://codingdojang.com/scode/592?answer=20406#answer_20406)
 * [[lv.2] 몬테카를로 방법 -19.12.30](http://codingdojang.com/scode/507?answer=20403#answer_20403)
 * [[lv.2] 모스부호 해독 -19.12.29](http://codingdojang.com/scode/469?answer=20387#answer_20387)
