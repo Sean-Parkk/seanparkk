@@ -24,7 +24,7 @@ Python을 배우고, Kaggle 튜토리얼을 해보며 실제 비즈니스에서 
 1. 주문 관련:  장바구니 담은 수 / 구매 횟수 / 총 구매 수량 / 총 구매 금액 / 총 누적 쿠폰 수 / 사용 쿠폰 수 / 환불 횟수
 
 복잡한 코드를 짜서 만들기보다는, random 모듈을 활용하여 index들을 구성하였다. index별로 나름의 조건을 설정하여 데이터를 생성하였으며, 총 5만개의 데이터를 생성하였다.  
-![Image](./assets/images/Making_SampleDB_image.png)  
+![Image1](./assets/images/Making_SampleDB_image.png)  
 *우여곡절 끝에 만들어진 내 첫 고객님들..!*
 
 ****
