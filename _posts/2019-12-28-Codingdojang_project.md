@@ -22,7 +22,9 @@ tags:
 
 코딩 완료 목록
 -----
-* [[lv.2] 모스부호 해독](http://codingdojang.com/scode/469?answer=20387#answer_20387)
+* [[lv.2] 타노스의 핑거스냅 - 19.12.30](http://codingdojang.com/scode/592?answer=20406#answer_20406)
+* [[lv.2] 몬테카를로 방법 -19.12.30](http://codingdojang.com/scode/507?answer=20403#answer_20403)
+* [[lv.2] 모스부호 해독 -19.12.29](http://codingdojang.com/scode/469?answer=20387#answer_20387)
 * [[lv.2] CamelCase를 Pothole_case 로 바꾸기!](http://codingdojang.com/scode/484?answer=20383#answer_20383)
 * [[lv.2] 문자열 압축하기](http://codingdojang.com/scode/465?answer=20305#answer_20305)
 * [[lv.2] 3n+1 Problem](http://codingdojang.com/scode/409?answer=20287#answer_20287)
