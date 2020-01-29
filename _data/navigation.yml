@@ -6,9 +6,10 @@ main:
     url: /about
   - title: "Projects"
     url: /projects
-  - title: "Diary"
-    url: /diary
   - title: "Study"
     url: /study
+  - title: "Diary"
+    url: /diary
+
 # -  title: "Categories"
 #     url: /categories
