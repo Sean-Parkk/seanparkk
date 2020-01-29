@@ -8,5 +8,7 @@ main:
     url: /projects
   - title: "Diary"
     url: /diary
+  - title: "Study"
+    url: /study
 # -  title: "Categories"
 #     url: /categories
