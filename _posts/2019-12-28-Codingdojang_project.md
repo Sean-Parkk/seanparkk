@@ -18,7 +18,7 @@ tags:
 
 1일 1코딩을 목표로 파이썬과 친해지기를 기원하며, 푼 문제들을 github에 업로드!_(계정: Sean)_
 
-**[> Sean's Github](https://github.com/Sean-Parkk/codingdojang) **
+**[> Sean's Github](https://github.com/Sean-Parkk/codingdojang)**
 ![img](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/1day1coding.png?raw=true)
 
 - - -
