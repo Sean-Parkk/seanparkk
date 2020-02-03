@@ -91,11 +91,13 @@ tags:
 ## 배고픔 분석하기
 > 어떤 활동이 배고픔에 영향을 끼쳤을까
 
-1. 식사 데이터 분석
+**1) 식사 데이터 분석**
+
   * 식사 여부 분석
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph1.png?raw=true)
     * 아침 식사는 먹은날과 안먹은날의 빈도가 비슷했다.
     * 점심과 저녁은 거른 날이 거의 드물었다.
+
   * 식사 여부에 따른 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph2.png?raw=true)
     * 아침을 거른다고 배고픔에 큰 영향을 끼치지 않는 듯 하다.
@@ -103,13 +105,13 @@ tags:
     * 저녁을 안 먹은 빈도는 낮았지만, 안 먹으면 확실히 자기 전 배가 고팠다.
     * 식사가 직접적인 원인일 것이라 생각했지만, 다른 요소가 배고픔에 더 영향을 많이 끼칠 것으로 보여진다.
 
-2. 아침 운동 데이터 분석
+**2) 아침 운동 데이터 분석**
 * 아침 운동에 따른 배고픔 분석
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph3.png?raw=true)
-    * 아침 운동을 한 날과 안 한 날의 빈도는 큰 차이가 없다.
-    * 하지만 아침 운동을 한 날은 상대적으로 배고플 확률이 높았다.
+  * 아침 운동을 한 날과 안 한 날의 빈도는 큰 차이가 없다.
+  * 하지만 아침 운동을 한 날은 상대적으로 배고플 확률이 높았다.
 
-3. 외부 활동 데이터 분석
+**3) 외부 활동 데이터 분석**
 * 외부 활동 수 비교 / 활동 별 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph4.png?raw=true)
     * 집에만 있던 날이 제일 많았다.
@@ -123,7 +125,7 @@ tags:
       * 집에 돌아오면 새벽이어서 매번 배고픔에 허덕인 기억이 있다.
     * 병원에 갔던 날은 배가 고팠지만, 빈도도 적고 배고픔과의 큰 관계성이 없어보인다.
 
-4. 걸음 수 데이터 분석
+**4) 걸음 수 데이터 분석**
 * 날짜 별 걸음 수
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph5.png?raw=true)
     * 날짜 별 데이터로는 패턴을 확인할 수 없었다.
@@ -134,7 +136,8 @@ tags:
       * 집에 있으면 걸을 일이 없으니, 활동 별로 나눠보면 다르게 나오지 않을까?
     * 외부 활동 별로 나누니, 외부 활동이 있던 날 많이 걸었음
 
-5. 공부 시간 데이터 분석
+**5) 공부 시간 데이터 분석**
+* 공부 시간과 배고픔
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph7.png?raw=true)
     * 배가 고픈 날은 평균적으로 공부를 많이 했다.
     * 활동별로 나눠보니, 외부 활동이 없던 날 평균 공부 시간이 높았다.
