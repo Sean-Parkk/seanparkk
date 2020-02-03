@@ -207,3 +207,6 @@ SQL과 Python을 공부만 하는 것보다는 프로젝트를 해보고 싶었�
 이 글에 포함되지 않은 다양한 SQL 쿼리, Python 코드를 날려보며 그래도 삽질을 재미있어 하는구나. 3년 동안 했으면서도 또 재미있어 하는구나 를 느꼈다.  
 같은 데이터를 두고 나중에 능력이 업그레이드되면 또 해보고 싶다.  
 그땐 얼마나 더 다양한 이야기들을 해볼 수 있을까!
+
+*공부 열심히 해서 피자 많이 시켜먹자!*
+  ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/pizza.jpg?raw=true)
