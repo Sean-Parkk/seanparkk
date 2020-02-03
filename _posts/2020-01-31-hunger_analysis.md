@@ -31,13 +31,9 @@ tags:
 * 공부 시간
   * 공부 시 어플을 활용하여 공부 시간을 측정했다.
 
-
-
 2. 데이터 수집 방법
 * 수기로 직접 기록, 스마트폰 데이터 활용
 ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/crawling.png?raw=true)
-
-
 
 3. SQL로 데이터 이동
 * 데이터의 수가 적어, 오류는 수기 검수
@@ -51,7 +47,7 @@ tags:
 >일할 때 다른 사람(고객)의 데이터는 자주 봤어도, 내 데이터를 이렇게 정리한 것은 처음인 것 같다. 바라보자니 궁금한 것들이 와장장 생겼다.
 
 * 아침은 몇 번 먹었을까?
-  ```SQL
+  ```
   SELECT breakfast, COUNT(breakfast) AS cnt
   FROM project
   GROUP BY breakfast
@@ -81,7 +77,7 @@ tags:
 
 
 * 어떤 활동을 가장 많이 했을까?
-  ``` SQL
+  ```
   SELECT activity, COUNT(activity) AS cnt
   FROM project
   GROUP BY activity
