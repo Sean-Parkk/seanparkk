@@ -92,15 +92,15 @@ tags:
 > 어떤 활동이 배고픔에 영향을 끼쳤을까
 
 1. 식사 데이터 분석
-* 식사 여부 분석
+  * 식사 여부 분석
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph1.png?raw=true)
     * 아침 식사는 먹은날과 안먹은날의 빈도가 비슷했다.
     * 점심과 저녁은 거른 날이 거의 드물었다.
-* 식사 여부에 따른 배고픔 유무
+  * 식사 여부에 따른 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph2.png?raw=true)
     * 아침을 거른다고 배고픔에 큰 영향을 끼치지 않는 듯 하다.
     * 점심, 저녁 식사는 거른 날이 거의 없기 떄문에 유의미하지는 않다.
-      * 저녁을 안 먹은 빈도는 낮았지만, 안 먹으면 확실히 자기 전 배가 고팠다.
+    * 저녁을 안 먹은 빈도는 낮았지만, 안 먹으면 확실히 자기 전 배가 고팠다.
     * 식사가 직접적인 원인일 것이라 생각했지만, 다른 요소가 배고픔에 더 영향을 많이 끼칠 것으로 보여진다.
 
 2. 아침 운동 데이터 분석
