@@ -14,7 +14,7 @@ tags:
 그런데, 나름 규칙적으로 생활하고 먹고 자는데도 **어떤 날은 자기 전 배가 고프고, 어떤 날은 배가 안고팠다.** 배가 고프다고 배달을 시켜먹기엔 돈도 부담이고 혼자 다 먹지도 못하고, 그냥 자자니 뭔가 서럽고.  
 
 자기 전 배고픔을 조금이라도 덜 느껴보기 위해 직접 데이터를 수집하고, 분석해보았다. *(학습과 생존을 목표로?)*
-- - - -
+
 
 수집한 데이터
 ---
@@ -29,4 +29,6 @@ tags:
 * 공부 시간
   + 공부 시 어플을 활용하여 공부 시간을 측정했다.
 
-![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/crawling.png?raw=true) {:.aligncenter}
+<center><img scr="https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/crawling.png?raw=true"></center>
+
+![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/crawling.png?raw=true)
