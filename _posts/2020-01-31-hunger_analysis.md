@@ -100,7 +100,6 @@ tags:
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph1.png?raw=true)
     * 아침 식사는 먹은날과 안먹은날의 빈도가 비슷했다.
     * 점심과 저녁은 거른 날이 거의 드물었다.
-
 * 식사 여부에 따른 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph2.png?raw=true)
     * 아침을 거른다고 배고픔에 큰 영향을 끼치지 않는 듯 하다.
@@ -115,4 +114,5 @@ tags:
     * 하지만 아침 운동을 한 날은 상대적으로 배고플 확률이 높았다.
 
 3. 외부 활동 데이터 분석
-*
+* 외부 활동 수 비교 / 활동 별 배고픔 유무
+    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph4.png?raw=true)
