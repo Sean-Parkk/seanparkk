@@ -70,9 +70,9 @@ tags:
   ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/sql2.png?raw=true)
   * 당연하게도, 집에만 있었을 때에 평균 공부 시간이 8시간으로 길었다.
   * 외출을 하거나 데이터를 하는 날에는 평균 3시간 정도 공부를 한다.
-    * 외부 활동이 있는 날에는 3시간 동안 할 수 있는 짧은 공부거리를 하는게 좋겠다. (파이썬 문제 풀기와 같은?)
+    * 외부 활동이 있는 날에는 3시간 동안 할 수 있는 짧은 공부거리를 하는게 좋겠다.  (파이썬 문제 풀기와 같은?)
   * 병원에 간 날은 공부를 11시간으로 꽤나 오래했다.
-    * 목이 아파서 도수치료를 받고 있는데, 보험이 된다 한들 돈이 꽤 지출된다. *(지갑이 마르는 소리때문에 공부를 더 하게되는건 아닌지...)*
+    * 목이 아파서 도수치료를 받았는데, 보험이 된다 한들 돈이 꽤 지출된다. *(지갑이 마르는 소리때문에 공부를 더 하게되는건 아닌지...)*
 
 
 
@@ -92,10 +92,12 @@ tags:
 > 어떤 활동이 배고픔에 영향을 끼쳤을까
 
 1. 식사 데이터 분석
+
 * 식사 여부 분석
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph1.png?raw=true)
     * 아침 식사는 먹은날과 안먹은날의 빈도가 비슷했다.
     * 점심과 저녁은 거른 날이 거의 드물었다.
+
 * 식사 여부에 따른 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph2.png?raw=true)
     * 아침을 거른다고 배고픔에 큰 영향을 끼치지 않는 듯 하다.
@@ -104,11 +106,40 @@ tags:
     * 식사가 직접적인 원인일 것이라 생각했지만, 다른 요소가 배고픔에 더 영향을 많이 끼칠 것으로 보여진다.
 
 2. 아침 운동 데이터 분석
+
 * 아침 운동에 따른 배고픔 분석
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph3.png?raw=true)
     * 아침 운동을 한 날과 안 한 날의 빈도는 큰 차이가 없다.
     * 하지만 아침 운동을 한 날은 상대적으로 배고플 확률이 높았다.
 
 3. 외부 활동 데이터 분석
+
 * 외부 활동 수 비교 / 활동 별 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph4.png?raw=true)
+    * 집에만 있던 날이 제일 많았다.
+      * 외부 활동이 없음에도 절반 이상의 날들이 배가 고팠다.
+      * 집에서 어떤 활동을 했는지 같이 분석할 필요가 있어보인다.
+    * 외출, 데이트, 친구 등의 활동이 있는 날엔 배가 고픈 날이 상대적으로 적었다.
+      * 바깥에 나가서 저녁을 먹고 들어오는 경우가 많았기 때문으로 해석된다.
+      * 특히 친구를 만난 날은 100% 배가 안 고팠다. *약속은 좋은 영양소입니다*
+    * 축구를 한 날은 모두 배가 고팠다.
+      * 매주 목요일 밤 10시부터 12시까지 하고 있다.
+      * 집에 돌아오면 새벽이어서 매번 배고픔에 허덕인 기억이 있다.
+    * 병원에 갔던 날은 배가 고팠지만, 빈도도 적고 배고픔과의 큰 관계성이 없어보인다.
+
+4. 걸음 수 데이터 분석
+
+* 날짜 별 걸음 수
+    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph5.png?raw=true)
+    * 날짜 별 데이터로는 패턴을 확인할 수 없었다.
+    * 요일 별 데이터로 다시 나눠보니, 월요일에는 걸음 수가 평균 1,000걸음으로 제일 적다.
+
+* 평균 걸음 수와 배고픔 유무
+    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph6.png?raw=true)
+    * 많이 걸은 날이 오히려 배가 안 고팠음
+      * 집에 있으면 걸을 일이 없으니, 활동 별로 나눠보면 다르게 나오지 않을까?
+    * 외부 활동 별로 나누니, 외부 활동이 있던 날 많이 걸었음
+
+5. 공부 시간 데이터 분석
+    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph7.png?raw=true)
+    * 공부를 많이 한 날,
