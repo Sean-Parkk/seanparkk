@@ -51,7 +51,7 @@ tags:
 >일할 때 다른 사람(고객)의 데이터는 자주 봤어도, 내 데이터를 이렇게 정리한 것은 처음인 것 같다. 바라보자니 궁금한 것들이 와장장 생겼다.
 
 * 아침은 몇 번 먹었을까?
-  ``` SQL
+  ```
   SELECT breakfast, COUNT(breakfast) AS cnt
   FROM project
   GROUP BY breakfast
@@ -103,7 +103,7 @@ tags:
 
 
 
-  * 식사 여부에 따른 배고픔 유무
+* 식사 여부에 따른 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph2.png?raw=true)
     * 아침을 거른다고 배고픔에 큰 영향을 끼치지 않는 듯 하다.
     * 점심, 저녁 식사는 거른 날이 거의 없기 떄문에 유의미하지는 않다.
