@@ -51,7 +51,7 @@ tags:
 >일할 때 다른 사람(고객)의 데이터는 자주 봤어도, 내 데이터를 이렇게 정리한 것은 처음인 것 같다. 바라보자니 궁금한 것들이 와장장 생겼다.
 
 * 아침은 몇 번 먹었을까?
-  ```
+  ```SQL
   SELECT breakfast, COUNT(breakfast) AS cnt
   FROM project
   GROUP BY breakfast
@@ -64,7 +64,7 @@ tags:
 
 
 * 점심을 먹은 날, 외부 활동 별 평균 공부 시간은? 3시간 이상 한 것만 추려보기!
-  ``` SQL
+  ```
   SELECT activity, AVG(study) AS avg
   FROM project
   WHERE lunch = "먹음"
@@ -101,8 +101,6 @@ tags:
     * 아침 식사는 먹은날과 안먹은날의 빈도가 비슷했다.
     * 점심과 저녁은 거른 날이 거의 드물었다.
 
-
-
 * 식사 여부에 따른 배고픔 유무
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph2.png?raw=true)
     * 아침을 거른다고 배고픔에 큰 영향을 끼치지 않는 듯 하다.
@@ -110,15 +108,11 @@ tags:
       * 저녁을 안 먹은 빈도는 낮았지만, 안 먹으면 확실히 자기 전 배가 고팠다.
     * 식사가 직접적인 원인일 것이라 생각했지만, 다른 요소가 배고픔에 더 영향을 많이 끼칠 것으로 보여진다.
 
-
-
 2. 아침 운동 데이터 분석
 * 아침 운동에 따른 배고픔 분석
     ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/graph3.png?raw=true)
     * 아침 운동을 한 날과 안 한 날의 빈도는 큰 차이가 없다.
     * 하지만 아침 운동을 한 날은 상대적으로 배고플 확률이 높았다.
-
-
 
 3. 외부 활동 데이터 분석
 *
