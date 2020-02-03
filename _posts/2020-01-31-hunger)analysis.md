@@ -16,8 +16,9 @@ tags:
 자기 전 배고픔을 조금이라도 덜 느껴보기 위해 직접 데이터를 수집하고, 분석해보았다. *(학습과 생존을 목표로?)*
 
 
-수집한 데이터
+데이터 수집하기
 ---
+1. 데이터 수집 목록
 * 세 끼 식사 여부  
   + 식사 양은 측정하기 어렵기 때문에, 균일하다고 가정했다.
 * 아침 운동 여부
@@ -28,7 +29,6 @@ tags:
   + 스마트폰 걸음 수 측정기를 활용했다.
 * 공부 시간
   + 공부 시 어플을 활용하여 공부 시간을 측정했다.
-
-<center><img scr="https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/crawling.png?raw=true"></center>
-
+2. 데이터 수집 방법
+* 수기로 직접 기록, 스마트폰 데이터 활용
 ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/crawling.png?raw=true)
