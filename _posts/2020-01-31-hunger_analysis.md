@@ -42,7 +42,7 @@ tags:
 ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/hungeranalysis(1).png?raw=true)
 
 
-##데이터 살펴보기
+## 데이터 살펴보기!
 
 >일할 때 다른 사람(고객)의 데이터는 자주 봤어도, 내 데이터를 이렇게 정리한 것은 처음인 것 같다. 바라보자니 궁금한 것들이 와장장 생겼다.
 
