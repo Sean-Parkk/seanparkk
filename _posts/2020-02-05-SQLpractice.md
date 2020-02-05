@@ -17,7 +17,7 @@ tags:
 사실 *'전 회사에서 SQL을 조금만 잘 다룰 줄 알았다면 업무 효율성이 확 올라갔겠다'* 라는 생각을 요즘 많이 한다.  
 
 공부하는 입장에서 정말 좋은 사이트인 프로그래머스에 SQL문제가 실려있다.  
-문제 자체가 어렵지는 않아서, 몇 문제를 빼고는 **[Github](https://github.com/Sean-Parkk/tobeSQLmaster/tree/master/programmers)** 에 업로드해보았다.  
+문제 자체가 어렵지는 않아서, 몇 문제를 빼고는 **[Github 보러 가기](https://github.com/Sean-Parkk/tobeSQLmaster/tree/master/programmers)** 에 쿼리를 업로드해보았다.  
 어려운 문제는 좀 더 공부해서 풀어볼 예정!
 
 ```
@@ -26,6 +26,7 @@ FROM 도토리
 WHERE 도토리묵 = 국산;
 ```
 
-[> 프로그래머스에서 SQL공부하기](https://programmers.co.kr/learn/challenges?tab=sql_practice_kit)  
+[> 프로그래머스에서 SQL공부하기(클릭!)](https://programmers.co.kr/learn/challenges?tab=sql_practice_kit)  
 
-![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/DOTODOTO.jpg?raw=true)
+20.02.05 기준 SQL문제 모두 풀기 완료(짝짝짝)  
+![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/programmers.jpg?raw=true)
