@@ -29,4 +29,4 @@ WHERE 도토리묵 = 국산;
 [> 프로그래머스에서 SQL공부하기(클릭!)](https://programmers.co.kr/learn/challenges?tab=sql_practice_kit)  
 
 20.02.05 기준 SQL문제 모두 풀기 완료(짝짝짝)  
-![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/programmers.jpg?raw=true)
+![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/programmers.png?raw=true)
