@@ -106,9 +106,9 @@ $xing-color: #006567 !default;
 $link-color: #3b9cba !default; // mix(#000, $info-color, 75%)
 $link-color-hover: #3387A1 !default; // mix(#000, $link-color, 25%)
 $link-color-visited: #27677A !default; // mix(#fff, $link-color, 15%)
-$masthead-link-color: #3b9cba !default; // $primary-color
-$masthead-link-color-hover: #3387A1 !default; // mix(#000, $primary-color, 25%)
-$navicon-link-color-hover:  #3b9cba !default; // mix(#000, $primary-color, 75%)
+$masthead-link-color: mix(#000, $primary-color, 25%) !default; // $primary-color
+$masthead-link-color-hover: mix(#000, $primary-color, 25%) !default; // mix(#000, $primary-color, 25%)
+$navicon-link-color-hover:  mix(#000, $primary-color, 75%) !default; // mix(#000, $primary-color, 75%)
 
 /* syntax highlighting (base16) */
 $base00: #263238 !default;
