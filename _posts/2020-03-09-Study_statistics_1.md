@@ -6,6 +6,8 @@ categories:
   - study
 tags:
   - Study
+  - Statistics
+  - Dataanalysis
 ---
 
 ## 탐색적 데이터 분석, EDA(Exploratory Data Analysis)
