@@ -80,7 +80,7 @@ tags:
     - 백분위수를 표현하기 위한 상자그림
     - 특잇값(이상값)을 제외한 백분위수 표현
 
-        ![study](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/URI.png?raw=true/study01.jpg)
+        ![study](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/study01.jpg?raw=true)
 
 - 도수분포표와 히스토그램
     - 도수분포표: 변수의 범위를 **동일한 크기**로 나눔
@@ -120,7 +120,7 @@ tags:
     - 주로 가중평균하여 구함
 - 데이터 시각화 전, 확인해야 할 것들
 
-    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/URI.png?raw=true/study02.jpg)
+    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/study02.jpg?raw=true)
 
 > 상관관계
 
