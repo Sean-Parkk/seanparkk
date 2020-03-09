@@ -1,6 +1,6 @@
 ---
 title:  "탐색적 데이터 분석, EDA"
-excerpt: "데이터 과학을 위한 통계 1장"
+excerpt: "데이터 과학을 위한 통계 1장 내용 정리"
 
 categories:
   - study
