@@ -20,10 +20,12 @@ tags:
         - 파이썬의 list, 넘파이의 array와 같은 1차원 배열
     - 데이터프레임
         - 2차원 배열
-```Python
+~~~
     pd.Series([1,2,3,4])
     pd.Series(np.random.randint(1,3,100))
-```
+~~~
+{: .language-Python}
+
 - Series를 DataFrame으로!
 ```
     s = s.to_Frame()
