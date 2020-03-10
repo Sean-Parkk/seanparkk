@@ -14,7 +14,7 @@ tags:
 
 # Pandas Study
 > 데이터 분석에 기초가 되어줄 판다스 라이브러리 공부하기
-
+d
 - 데이터타입
     - 시리즈
         - 파이썬의 list, 넘파이의 array와 같은 1차원 배열
@@ -33,7 +33,7 @@ tags:
 - csv불러올 때 구분자 설정, 인덱스 설정
     - 길이가 정해지지 않은 공백으로 구분되어있으면,  sep='\s+' 사용
     - 날짜, 시간으로 된 데이터 parse_dates로 파싱하기
-```
+```python
     df = pd.read_csv('../aa/aa.csv', sep='\s+', index=1, parse_dates=[[0,1,2]]) #sep='\t', '\n' 등 #index='col3'
 ```
 - 행(0) 혹은 열(1) 세기
