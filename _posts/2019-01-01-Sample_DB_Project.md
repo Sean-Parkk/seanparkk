@@ -3,7 +3,7 @@ title:  "e-커머스 Sample DB 생성 및 분석 프로젝트(1) "
 excerpt: "Python을 활용한 Sample DB 만들기"
 
 categories:
-  - projects
+  - 
 tags:
   - coding
   - python
