@@ -24,7 +24,7 @@ tags:
     pd.Series([1,2,3,4])
     pd.Series(np.random.randint(1,3,100))
 ~~~
-{: .language-Python}
+{: .language-python}
 
 - Series를 DataFrame으로!
 ```
