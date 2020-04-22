@@ -3,8 +3,9 @@ title: "Curriculum"
 permalink: /curriculum/
 layout: single
 ---
-나만의 데이터 사이언스 커리큘럼
-===
+# 나만의 데이터 사이언스 커리큘럼
+{:.no_toc}
+
 
 **마지막 수정일: 2020.04.22**
 
