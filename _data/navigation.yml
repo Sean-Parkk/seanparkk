@@ -4,6 +4,8 @@ main:
   #   url: https://sean-parkk.github.io/seanparkk/
   - title: "About"
     url: /about
+  - title: "Curriculum"
+    url: /Curriculum
   - title: "Projects"
     url: /projects
   - title: "Study"
