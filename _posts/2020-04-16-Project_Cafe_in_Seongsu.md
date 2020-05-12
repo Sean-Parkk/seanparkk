@@ -20,8 +20,8 @@ tags:
 깃허브에서 보기: [링크 클릭!](https://github.com/Sean-Parkk/Projects/blob/master/cafe_in_seongsu/cafe_in_seongsu.ipynb)
 # 1. 데이터 수집하기
 * 데이터는 카카오맵을 기준으로 수집한다.
-  * 구글 맵을 안 쓴 이유는 카페의 절대적인 수가 많기 때문이다.
-  * 네이버맵은 평점이 조회하기 불편하게 제공된다.
+  * 구글 맵을 안 쓴 이유는 구글 맵보다 카카오맵에서 검색되는 카페의 수가 더 많기 때문이다.
+  * 네이버맵은 평점이 조회하기 불편하게 제공되어서, 사용하지 않았다.
 * 일단 지도에 카페를 검색해보자.
 
 ![이미지](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/cafeinseongsu/이미지 1.png?raw=true)
