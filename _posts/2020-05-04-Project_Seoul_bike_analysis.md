@@ -193,6 +193,7 @@ df_group['rent_return_ratio'] = df_group['rent'] / df_group['return']
   * 자전거, 자동차, 킥보드 등 공유되는 이동 수단도 다양해지고있다.
   * 나는 맛보기로 따릉이 데이터를 분석해보았지만,
     * 추후 모빌리티에서 나오는 다양한 데이터들을 통해 재미있는 인사이트가 많이 나올 것 같다.
+
 *끝!!*
 
 [자세한 코드 보러 가기 >](https://nbviewer.jupyter.org/gist/Sean-Parkk/0d7d9567b0d8145eaf2f4fec587740f4)
