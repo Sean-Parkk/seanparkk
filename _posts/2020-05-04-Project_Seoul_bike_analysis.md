@@ -3,7 +3,7 @@ title:  "빌릴 땐 마음대로지만 반납할 땐 아니란다."
 excerpt: "따릉이 데이터 분석하기"
 
 categories:
-  - projectsss
+  - projects
 tags:
   - Study
   - Statistics
