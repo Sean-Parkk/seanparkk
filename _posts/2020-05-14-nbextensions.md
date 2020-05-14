@@ -3,6 +3,7 @@ title:  "버튼 한 번 누르면, 내 코드를 pep8 스타일로 바꿔주는 
 excerpt: "주피터 노트북 확장기능 알아보기"
 
 categories:
+  - study
 tags:
 - study
   - Jupyter
