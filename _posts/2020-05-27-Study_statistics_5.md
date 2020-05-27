@@ -238,7 +238,9 @@ tags:
 - 클래스1이 희박할 때에, 거짓 양성 비율이 높아질 수 있는데,
     - 이럴 경우 클래스는 1로 분류되었지만 실제로는 0일 확률이 더 높음
 
-![이미지](https://imgur.com/uDp4ShW)
+![이미지](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/1.png?raw=true)
+
+$$\left(\begin{array}{c}k\\ b\end{array}\right)$$
 
 ### 희귀 클래스 문제
 
