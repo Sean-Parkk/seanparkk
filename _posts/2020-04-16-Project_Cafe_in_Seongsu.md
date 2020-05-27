@@ -34,7 +34,7 @@ tags:
 
 ![이미지](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/cafeinseongsu/이미지 3.png?raw=true)
 * 필요한 정보를 모두 크롤링하여 가져왔다.
-  * BeautifulSoup, Folium라이브러리를 활용했다.
+  * BeautifulSoup, Selenium라이브러리를 활용했다.
 * 이제 분석하기 좋은 상태로 데이터를 가공해보자.
 
 # 2. 데이터 전처리
