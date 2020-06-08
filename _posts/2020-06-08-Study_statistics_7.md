@@ -38,7 +38,7 @@ tags:
     - 어느 한 변수에서 일바 분화는 실제로 다른 변수에서의 변화에 의해 중복되기도 한다.
 - PCA는 수치형 변수가 어떤 식으로 공변하는지 알아내는 기법
     - 주요 아이디어는 다수의 수치형 변수들을 더 적은 수의 변수들의 집합으로 나타내는 것
-    - 이 집합을 **주성분**이라고 하며,이를 이용해 데이터의 차원을 축소할 수 있다.
+    - 이 집합을 **주성분** 이라고 하며, 이를 이용해 데이터의 차원을 축소할 수 있다.
     - 주성분을 만드는 데 사용되는 가중치들은, 각 변수들이 주성분 생성 기여 정도를 나타냄
 - 변수 X1과 X2에 대해 두 주성분 Zi(i=1 or 2)가 있다면, 수식은 아래와 같다.
 
@@ -69,7 +69,7 @@ tags:
     1. 스크리그래프
         - 그림이 마치 절벽이 있는 산비탈(scree slope)와 흡사
 
-            ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/Untitled.png)
+            ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/Untitled.png?raw=true)
 
     2. 상위 주성분들의 가중치를 표시해보기
         - 각 주성분에서 특성들이 어떤 방향성을 띄고있는지 알 수 있다.
@@ -130,7 +130,7 @@ tags:
     - 언제 클러스터 세트가 데이터의 분산의 '대부분'을 설명하는지 알려준다.
     - 여기에 새로운 클러스터를 더 추가하면 분산에 대한 기여도가 상대적으로 작아진다.
 
-        ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/Untitled%201.png)
+        ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/Untitled%201.png?raw=true)
 
     - 분산 증가율이 서서히 떨어지는 경우, 눈에 띄는 위치는 없을것이다.
         - 이것은 잘 정의된 클러스터가 없는 데이터에서 일반적이며,
@@ -174,7 +174,7 @@ tags:
     - 트리의 잎: 각 레코드
     - 가지의 길이: 해당 클러스터 간 차이 정도
 
-        ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/Untitled%202.png)
+        ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/statistics/Untitled%202.png?raw=true)
 
 ### 병합 알고리즘
 
