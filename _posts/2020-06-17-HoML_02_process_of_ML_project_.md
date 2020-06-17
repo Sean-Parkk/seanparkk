@@ -9,7 +9,7 @@ tags:
   - MachineLearning
   - Dataanalysis
 
-use_math
+use_math: True
 ---
 
 # 2장. 머신러닝 프로젝트 처음부터 끝까지
