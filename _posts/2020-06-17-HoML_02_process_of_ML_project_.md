@@ -8,6 +8,8 @@ tags:
   - Study
   - MachineLearning
   - Dataanalysis
+
+use_math
 ---
 
 # 2장. 머신러닝 프로젝트 처음부터 끝까지
