@@ -102,7 +102,7 @@ layout: single
   * 분석과 통계를 뗄 수는 없기떄문에, 한 번 공부하고 졸업하는 그런 분야는 절대 아니다.
     * 물론 나는 아직 많이 부족해서 계속 공부하고있다(ㅠㅠ)
 
-## 4. 머신러닝/딥러닝
+## 5. 머신러닝/딥러닝
 *그 분이 오셨다. 가장 핫하다는 그 분*
 * [코세라) Andrew NG교수님의 머신러닝 강의](https://www.coursera.org/learn/machine-learning)
   * 머신러닝이 무엇인지, 귀와 뇌에 쏙쏙 박아주신다.
@@ -128,7 +128,7 @@ layout: single
     * 이 커리큘럼의 목적은 머신러닝 엔지니어 수준의 지식이 아니라, 머신러닝이 무엇인지, 종류는 어떤 것이 있는지, 어떻게 작동하며 구현하는지 등을 습득하는 것이다.
     * 나는 기본서(개념)를 하나 공부하고, 모르는 것들을 구글에 검색하는 방법으로 공부하고있다.
 
-## 5. Python 라이브러리
+## 6. Python 라이브러리
 *분석을 할 때 아주 유용한 라이브러리를 공부하자.  
 공부를 위한 공부보다는, 직접 코드를 써가면서 학습했다.*
 * 워낙 많은 라이브러리가 있지만, 이 정도는 알아야겠다 생각한 라이브러리를 소개한다.
@@ -144,14 +144,14 @@ layout: single
     * 데이터 수집, 파싱 등에 사용되는 라이브러리.
     * 웹 크롤러를 만들기 위해 공부했다.
 
-## 6. 알고리즘 공부
+## 7. 알고리즘 공부
 *코딩테스트, 코딩테스트, 코딩테스트*
 * [해커랭크](https://www.hackerrank.com/domains/python?filters%5Bstatus%5D%5B%5D=unsolved&badge_type=python), [프로그래머스](https://programmers.co.kr/learn/challenges?tab=algorithm_practice_kit), [코딩도장](http://codingdojang.com/) 등에서 문제를 풀어볼 수 있다.
 * **논리적 사고, 구현 능력 등을 위해** 꾸준히 공부하고있다.
 * **분석가도 코딩테스트를 보는 경우가 많기 때문에,** 이를 준비하기 위해서는 많이 풀어보는 것이 정답
 * 유튜브나 인프런 등에 알고리즘 강의는 검색하면 굉장히 많이 나온다!
 
-## 7. 선형대수
+## 8. 선형대수
 *머신러닝, 딥러닝과 관계가 깊은 선형대수*
 * [Edwith MOOC) 주재걸 교수님의 인공지능을 위한 선형대수]
   * 기계학습의 관점에서 선형대수를 알기 쉽게 설명해주신다.
@@ -160,7 +160,7 @@ layout: single
 * [임성빈 강사님의 선형대수 자료](https://www.slideshare.net/ssuser7e10e4?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 * 선형대수는 나도 아직 공부를 깊게 하지 못해서, 링크만 올려둔다..!
 
-## 8. 데이터 분석 프로젝트
+## 9. 데이터 분석 프로젝트
 *공부한 내용을 활용해보기*
 * Kaggle
   * 데이터 분석 대회 중 가장 유명한 대회
@@ -179,7 +179,7 @@ layout: single
   * 대단한 결과물이 아니더라도, 수집과 전처리를 직접 해보고 분석을 해보는 과정을 통해 엄청나게 많은 지식을 얻게 되는 것 같다.
   * 나의 경우는, 최근에 [성수동 카페 별점 분석 프로젝트](https://nbviewer.jupyter.org/gist/Sean-Parkk/7264e35c764a53ef85ef3ba0dc626ed8?fbclid=IwAR1_pO_dxX9HqwsALdsqkxYDaTXz-vIOzVGGtjpZ-yT-BHfRlU9bGCL3OLQ)를 진행했다.
 
-## 9. 기타
+## 10. 기타
 *알아두면 좋은 것들, 혹은 나중에 공부할 것들*
 * Git
   * Git이 무엇인지 알아보고, 내가 공부한 내용들을 저장해보자.
