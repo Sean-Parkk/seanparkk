@@ -53,7 +53,7 @@ confusion_matrix(y_train, y_train_pred)
 
 - 실제 레이블을 어떻게 예측했는지 나타내주는 행렬
 
-    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/homl/Untitled.png?raw=true)
+    ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/homl/3/Untitled.png?raw=true)
 
 ### 정밀도와 재현율
 
