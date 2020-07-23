@@ -133,5 +133,6 @@ use_math: True
 - **회귀에 대한 CART 알고리즘**
     - $J\left(k,t_k\right)=\frac{m_{\text{left}}}{m}\text{MSE}_{\text{left}}+\frac{m_{\text{right}}}{m}\text{MSE}_{\text{right}}$
 
+    - $\text{In this fomula,} \begin{cases} a+1\\f\\ n+1\end{cases}$
     - $\text{In this fomula,}\begin{cases} \text{MSE}_{\text{node}}=\sum_{i\in\text{node}}\left(\hat{y}_{\text{node}}-y^{\left(i\right)}\right)^2 \\ \hat{y}_\text{node}=\frac{1}{m_{\text{node}}}\sum_{i\in\text{node}}y^{\left(i\right)} \end{cases}$
         - $\LaTeX$어려운데 재밌다
