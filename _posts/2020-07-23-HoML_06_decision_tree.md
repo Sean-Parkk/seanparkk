@@ -131,7 +131,7 @@ use_math: True
     - 위 방식으로 훈련세트를 성공적으로 둘로 나누면, 같은 방식으로 계속 나누어나감
         - 설정한 규제에 다다르거나, 더 이상 불순도를 줄일 수 없을 때 멈춤
 - **회귀에 대한 CART 알고리즘**
-    - $J\left(k,t_k\right)=\frac{m_{\text{left}}}{m}$
+    - $J\left(k,t_k\right)=\frac{m_{\text{left}}}{m}\text{MSE}_{\text{left}}$
 
     - $\text{In this fomula,}\begin{cases} \text{MSE}_{\text{node}}=\sum_{i\in\text{node}}\left(\hat{y}_{\text{node}}-y^{\left(i\right)}\right)^2 \\ \hat{y}_\text{node}=\frac{1}{m_{\text{node}}}\sum_{i\in\text{node}}y^{\left(i\right)} \end{cases}$
         - $\LaTeX$어려운데 재밌다
