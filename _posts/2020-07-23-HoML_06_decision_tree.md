@@ -132,7 +132,8 @@ use_math: True
         - 설정한 규제에 다다르거나, 더 이상 불순도를 줄일 수 없을 때 멈춤
 - **회귀에 대한 CART 알고리즘**
 
-    - $J\left(k,t_k\right)=\frac{m_{\text{left}}}{m}\text{MSE}_{\text{left}}+\frac{m_{\text{right}}}{m}$ 
+    - $J\left(k,t_k\right)=\frac{m_{\text{left}}}{m}\text{MSE}_{\text{left}}$
+    - $\frac{m_{\text{right}}}{m}\text{MSE}_{\text{right}}$
 
     - 여기에서,
       - $\text{MSE}_{\text{node}}=\sum_{i\in\text{node}}\left(\hat{y}_{\text{node}}-y^{\left(i\right)}\right)^2$
