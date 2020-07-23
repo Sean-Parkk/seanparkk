@@ -126,11 +126,11 @@ use_math: True
     - 가장 순수한 서브셋으로 나눌 수 있는 $(k, t_k)$짝을 찾아야하는데,
     - 이 알고리즘이 최소화해야하는 비용함수는 아래와 같다.
         - $J\left(k, t_k\right)=\frac{m_{\text{left}}}{m}G_{\text{left}} + \frac{m_{\text{right}}}{m}G_{\text{right}}$
-        - $G_{left/right}$: 왼쪽/오른쪽 서브셋의 불순도
-        - $m_{left/right}$: 왼쪽/오른쪽 서브셋의 샘플 수
+        - $G_\text{left/right}$: 왼쪽/오른쪽 서브셋의 불순도
+        - $m_\text{left/right}$: 왼쪽/오른쪽 서브셋의 샘플 수
     - 위 방식으로 훈련세트를 성공적으로 둘로 나누면, 같은 방식으로 계속 나누어나감
         - 설정한 규제에 다다르거나, 더 이상 불순도를 줄일 수 없을 때 멈춤
 - **회귀에 대한 CART 알고리즘**
-    - $J\left(k,t_k\right)=\frac{m_{left}}{m}\text{MSE}_{\text{left}}+\frac{m_\text{left}}{m}\text{MSE}_{right}$
+    - $J\left(k,t_k\right)=\frac{m_\text{left}}{m}\text{MSE}_{\text{left}}+\frac{m_\text{left}}{m}\text{MSE}_\text{right}$
     - $\text{In this fomula,}\begin{cases} \text{MSE}_\text{node}=\sum_{i\in\text{node}}\left(\hat{y}_\text{node}-y^{\left(i\right)}\right)^2 \\ \hat{y}_\text{node}=\frac{1}{m_\text{node}}\sum_{i\in\text{node}}y^{\left(i\right)} \end{cases}$
         - $~~\LaTeX$어려운데 재밌다~~
