@@ -3,7 +3,7 @@ title:  "오늘 뭐 먹지? 아니, 뭐가 있지?"
 excerpt: "남부터미널 부근 음식점 분석하기"
 
 categories:
-  - ##projects
+  - projects
 tags:
   - Study
   - Dataanalysis
@@ -20,7 +20,7 @@ tags:
 
 **목적: 남부터미널 부근 맛집 지도 만들기**
 
-결과물: [링크 클릭!](https://c11.kr/ZMS_map)
+결과물: [링크 클릭!](https://c11.kr/ZMS_map)  
 깃허브에서 보기: [링크 클릭!](https://github.com/Sean-Parkk/playdata_miniproject)
 
 ## 목차
@@ -29,15 +29,164 @@ tags:
 * 목차
 {:toc}
 
-# 1. 맛집 지도 만들기
-> 결과물을 먼저 공개한다. 자소서를 너무 많이 썼는지, 뭐든지 두괄식으로..
+# 1. 맛집 지도, ZMSmap
+> 결과물을 먼저 공개한다.  
+~~자소서를 너무 많이 썼는지, 블로깅도 두괄식으로..~~
 
 **[결과물 보러 가기(Click!)](https://c11.kr/ZMS_map)**
 
 * 페이지에 들어가면, 음식점들의 점수와 위치를 확인할 수 있다.
-  * ![image](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/f65fd754-5b04-4012-9469-61699e7cefac/2.gif?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20200723%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20200723T074533Z&X-Amz-Expires=86400&X-Amz-Signature=c86cbcc75106224360286719d04796500463b4bcd2d9d5834178fe21a9ab07fe&X-Amz-SignedHeaders=host)
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/1.gif?raw=true)
+* 내가 가려고 하는 음식점의 점수가 상위 몇%인지 확인할 수 있다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/1.png?raw=true)
 * 해당 지도 외, 다양한 컨셉의 지도들을 확인해볼 수 있다.
   * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/0.png?raw=true)
 
 # 2. 데이터 수집
-* 음식점의 데이터는 카카오맵을 크롤링하여 수집했다.
+## 2.1 사용한 지도 서비스
+* 음식점의 데이터는 **카카오맵을** 크롤링하여 수집했다.
+  * 이전 포스트에서도 언급했지만, 구글맵, 네이버맵, 카카오맵 중 크롤링하기 가장 좋은 지도는 카카오맵이다.
+    * 네이버맵: 지도 내에 평점을 제공하지 않는다.
+    * 구글맵: 평점, 리뷰 등을 제공한다. 하지만 크롤링 도중 지도가 멋대로 설정한 지역을 벗어난다.
+    * 카카오맵: **위 단점들을 모두 커버한다.**
+## 2.2 크롤링
+* 카카오맵에서 '음식점' 카테고리를 선택하여 나온 결과들을 크롤링하였다.
+* 크롤링한 정보는 아래와 같다.
+  * 음식점 이름, 카테고리, 평점, 평점 수, 리뷰 수, 주소
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/2.png?raw=true)
+* 크롤링은 Python의 `Selenium`, `BeautifulSoup`을 활용하였다.
+* 서초-강남 부근에 있는 **4,680곳의 음식점을** 크롤링했다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/3.png?raw=true)
+
+
+# 3. 전처리, 필터링, 특성 추가
+## 3.1 데이터의 형식, 형태 변경
+* Object to numeric
+  * 숫자와 문자가 섞여있는 경우가 있었는데, 이 문제를 해결했다.
+* 결측값 처리
+  * 주소가 없는 경우 직접 찾아서 넣어줬고, 잘못된 주소는 수정했다.
+
+## 3.2 데이터 필터링
+* '괜찮은' 음식점인지 확인하기 위해서는 **어떤 평가를 받았는지** 확인해야한다.
+  * 좋은 분석을 위해 평가를 아직 안 받았거나, 평가 수가 부족한 음식점들은 걸러냈다.
+  * 평가 수의 분포를 확인하고, **중앙값인 4 미만인** 음식점들은 제외했다.
+* 필터링을 하니, 1,420개의 음식점이 남았다.
+
+## 3.3 특성 추가
+### 3.3.1 위도, 경도, 거리
+  * 지리 시각화를 위해 위도와 경도 데이터를 추가했다.
+  * 그리고 이 데이터를 통해 학원에서부터의 거리를 구하여 추가했다.
+    * googleapi, kakaoapi를 활용했다.
+### 3.3.2 ZMS 지표
+> TMI 주의
+
+* '**괜찮은** 음식점은 어디인가?'라는 분석을 할 때, **괜찮은** 에 해당하는 하나의 지표가 있으면 수월할 것이다.
+* 평점, 평가 수, 리뷰 수를 종합한 하나의 지표를 만들었고, 이름은 ZMS로 지었다. (Zzon Mat Score)
+  * 지표의 수식에 대한 로직은 아래와 같다.
+    1. 소비자 입장에서 음식점을 평가할 때, **평점을 가장 중요하게 생각한다.**
+    2. 하지만 같은 평점이어도, **평가 수가 더 많으면 신뢰가 높다.**
+    3. 평점이 높다면, 어떤 것들이 괜찮은지 **자세히 보기 위해 리뷰를 확인한다.**
+  * 그래서 ZMS의 수식은 이렇게 세웠다.
+    * $$ZMS = 0\_100\_scaler(score * log(eval\_cnt) + min\_max\_scaler(log(review\_cnt+1)))$$
+      * $score$: 평점
+      * $eval\_cnt$: 평가 수
+      * $review\_cnt$: 리뷰 수
+    * 평가 수와 평점에 로그를 씌운 이유는 정규분포에 따르게 하기 위함 + 스케일에 대한 규제를 하기 위함이다.
+    * 리뷰 수는 가산점의 역할을 하기 위해 0~1 범위로 스케일링하였다.
+    * 이렇게 나온 수치를 0~100범위 내에 다시 스케일링하였다.
+* 이렇게 해서 산출된 ZMS의 분포는 아래와 같다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/4.png?raw=true)
+
+# 4. 음식점 분석하기
+> 학원 근처 점심 맛집 지도  만들기
+
+## 4.1 데이터 필터링
+### 4.1.1 학원 근처 음식점으로 추리기
+* 학원에서 나와 음식점으로 이동할 때, 도보로 10분을 넘기지 않도록 하고싶었다.
+  * 카카오맵 기준 700m가 도보로 약 10분거리라고 나타내주었기 때문에, 700m로 기준을 잡고 필터링했다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/5.png?raw=true)
+### 4.1.2 점심으로 부적절한 카테고리 제외
+* 술집, 곱창, 치킨 등 점심 식사와 동떨어진 음식점들은 제외했다.
+
+## 4.2 ZMS 확인하기
+* 필터링한 음식점들을 ZMS를 기준으로 정렬한 후, 상위 20곳의 ZMS를 확인해보았다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/6.png?raw=true)
+* 장꼬방이라는 곳이 상위 0.6%로 1등, 우작 설렁탕이라는 음식점은 1.41%로 2등을 차지했다.
+  * 그럼 ZMS 점수가 높은 두 곳의 리뷰는 어떨지 분석을 진행해보았다.
+
+## 4.3 리뷰 분석
+* 리뷰를 분석하여 실제로는 어떤 평가를 받고있는지 살펴보자.
+
+### 4.3.1 언제 평가를 많이 받았는가?
+* 장꼬방과 우작 설렁탕이 언제 리뷰를 많이 받았는지 살펴보자.
+*  이 데이터를 살펴보면, 음식점이 언제부터 유명해졌는지 짐작해볼 수 있을 것이다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/8.png?raw=true)
+  * 평가는 장꼬방이 우작설렁탕보다 더 많이 받았다.
+  * 장꼬방은 2013년에 가장 많은 평가를 받았고, 최근 3년간은 20~30회 정도의 평가를 받았다.
+    * 그리고 평가 수가 들쑥날쑥임을 알 수 있다.
+    * 우작 설렁탕은 2016년도부터 두각을 드러냈고, 이후 10~20건의 평가를 꾸준히 받고 있다.
+    * 사실 리뷰 수가 '좋은 음식점'을 나타낸다기보다는 '인지도'라고 이해하면 좋겠다.
+* 그럼 이번엔 평점을 살펴보자.
+
+### 4.3.2 두 음식점의 연간 평점 추이
+* 평점의 변화를 살펴보면 음식점이 초심을 잃었는지, 아니면 꾸준히 좋은 평가를 얻고있는지 알 수 있을것이다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/9.png?raw=true)
+  * 장꼬방의 경우, 2017년에는 평균 평점이 3점 후반대였으나, 2020년에는 1점 중반대로 낮아졌다.
+  * 반면, 우작설렁탕은, 최근 5년간 지속적으로 3~4점을 유지하고있다.
+* 장꼬방은 왜 평점이 낮아지고있는지 살펴보고, 동시에 우작설렁탕의 리뷰도 분석해보자.
+
+### 4.3.3 리뷰 분석 - 장꼬방
+* 장꼬방의 리뷰 124개에 대한 긍, 부정 워드클라우드를 만들어보았다. 물론 이를 위해 리뷰들을 크롤링해왔다..
+  * 긍정: 평점 3~5점, 부정: 평점 1, 2점
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/7.png?raw=true)
+  * 긍정, 부정 리뷰 모두 김치찌개, 계란말이의 언급이 가장 많다.
+  * 찌개집이다보니 김치찌개의 언급은 이해가 되는데, 계란말이가 왜 이렇게 많이 언급되고있을까?
+* 데이터가 적으니, 최근(2020년) 리뷰를 직접 확인해보자.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/10.png?raw=true)
+  * 계란말이에 대한 부정적인 리뷰가 잇다르고있다.
+    * 특히 철분이 가득하다, 물이 너무 많이 들어갔다 라는 등의 이야기가 많다.
+    * 5점짜리 리뷰도 비꼬며 5점을 줬다는 것을 알 수 있다... 대체 어느정도길래.
+    * 부정리뷰 워드클라우드에서 '물란', '말' 등이라는 단어가 물란말이에서 왔음을 추측해볼 수 있다.
+* 그럼 평점이 좋았던 2017년에는 어땠는지 살펴보자.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/11.png?raw=true)
+  * 전반적으로 짧은 리뷰가 많긴 하지만, 그래도 맛이 괜찮다는 평이 많다.
+    * 평생 먹어본 계란말이 중 장꼬방의 계란말이가 가장 맛있다는 평까지 존재한다!
+  * 정리하자면, 이전에는 김치찌개, 계란말이 맛집으로 유명했으나,
+  * 초심을 지키지 못했거나 레시피의 변화 등으로 인해 부정적인 이미지를 안게된 것 같다.
+* 아래 그래프가 장꼬방의 변화를 적나라하게 보여준다.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/12.png?raw=true)
+
+### 4.3.5 리뷰 분석 - 우작 설렁탕
+* 이번에는 우작 설렁탕을 살펴보자.
+* 우작 설렁탕의 리뷰는 52건으로, 긍정/부정을 나누기에는 수가 부족하다.
+* 전체 리뷰를 대상으로 워드클라우드를 만들어보자.
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/13.png?raw=true)
+  * 긍정인지 부정인지 알 수는 없지만, 설렁탕, 김치, 수육, 국물 등 우리가 '설렁탕'하면 먼저 떠오르는 키워드들이 보인다.
+* 그럼 우작 설렁탕은 별점이 어떻게 변화했을까?
+  * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/ZMS/14.png?raw=true)
+  * 4~5점을 가장 많이 받았고, 장꼬방과 대비된다.
+
+### 4.4 결론은?
+* 그럼 남부터미널 부근 **최고의 맛집은 '우작 설렁탕'** 이라고 말할 수 있겠다.
+  * (분석에서 그치지 않고 실제로 가보았는데, 리뷰에 언급된 것처럼 국물이 맛있고 김치가 정말 맛있었다..!)
+
+# 5. ZMS map
+* 위에 언급한 내용은 남부터미널 근처에 대한 분석이지만, 실제로는 ..
+  *  학원(남부터미널) 근처 지도
+  * 카테고리별 지도 (한식, 중식, 일식 등..)
+  * 술집 지도
+  * 치킨 지도
+  * 직접 선정한 맛집 지도
+* 총 **5가지의 주제로 분석했다.**
+  * ZMS로 음식점을 필터링할 수 있고,
+  * 직접 선정한 맛집의 경우, 보다 정성적인 분석 자료들도 첨부하였다.
+* 서초-강남 부근에 회사나 학원을 다니시는 분들은 한 번 쯤 사용해보면 어떨까!
+
+** [ZMS map 보러 가기](https://c11.kr/ZMS_map)
+
+- - - - -
+* 너무나 감사한 분들
+  * 프로젝트를 같이 진행한, 유쾌하고 감사한 팀원분들
+    * 장서인, 허윤성 님
+  * 전혀 모르는 사이인데도, 페이스북 메시지로 Plotly를 Notion에 임베드 하는 것에 대해 여쭤봤을 때 너무나도 친절하게 대답해주신..
+    * Taewoong Kong 님
