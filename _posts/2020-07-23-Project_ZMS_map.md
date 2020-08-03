@@ -11,6 +11,8 @@ tags:
   - Folium
   - Plotly
   - Geovisualization
+
+use_math: True
 ---
 >   뭘 먹을지도 고민인데, 근처에 어떤 음식점이 있는지도 모르겠다.
 
@@ -182,7 +184,7 @@ tags:
   * 직접 선정한 맛집의 경우, 보다 정성적인 분석 자료들도 첨부하였다.
 * 서초-강남 부근에 회사나 학원을 다니시는 분들은 한 번 쯤 사용해보면 어떨까!
 
-** [ZMS map 보러 가기](https://c11.kr/ZMS_map)
+** [ZMS map 보러 가기](https://c11.kr/ZMS_map)**
 
 - - - - -
 * 너무나 감사한 분들
