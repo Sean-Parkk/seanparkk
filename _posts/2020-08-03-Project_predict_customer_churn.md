@@ -15,6 +15,7 @@ tags:
 use_math: True
 ---
 # Predict Customer Churn
+{:.no_toc}
 * Start: 20.06.24
 * End: 20.07.22
 
@@ -22,6 +23,7 @@ use_math: True
 * 데이터셋: [캐글 데이터셋](https://www.kaggle.com/pavanraj159/telecom-customer-churn-prediction)
 
 # About project (TMI)
+{:.no_toc}
 ![image](https://nextommerce.com/wp-content/uploads/2019/04/pasted-image-0-1024x513.png?raw=true)
 * 서비스에서 가장 중요한 것이 뭐냐고 묻는다면 나는 고객이라고 답할것이다. 고객이 없다면 서비스의 존재 이유가 사라지기 때문이다.
     * 고객은 다음과 같이 크게 세 분류로 나눌 수 있을것이다.
@@ -46,7 +48,7 @@ use_math: True
 * 목차
 {:toc}
 
-## 1. 데이터 불러오기
+# 1. 데이터 불러오기
 
 
 ```python
@@ -380,9 +382,9 @@ df.tail(3)
 * 그리고, 컬럼명이 어떤 것은 카멜표기법이고, 어떤것은 그냥 소문자 표기법이다.
     * 오타도 줄일 겸, 모두 소문자로 컬럼명을 변경해버리자.
 
-## 2. 데이터 전처리
+# 2. 데이터 전처리
 
-### 2.1 컬럼명 변경
+## 2.1 컬럼명 변경
 * 소문자로 변경하자
 
 
@@ -436,7 +438,7 @@ df.columns
 
 
 
-### 2.2 이진 텍스트 데이터 숫자로 변경
+## 2.2 이진 텍스트 데이터 숫자로 변경
 
 
 ```python
@@ -858,7 +860,7 @@ df.info()
     memory usage: 1.1+ MB
 
 
-### 2.3 Totalcharges 컬럼
+## 2.3 Totalcharges 컬럼
 * 해당 컬럼이 object로 되어있는 것을 보아, 컬럼 내 문자가 포함되어있나보다.
 
 
@@ -1239,7 +1241,7 @@ df.info()
 
 * 처리 완료!
 
-## 3. 데이터 살펴보기
+# 3. 데이터 살펴보기
 * EDA전에, test 세트는 미리 구분하여 들여다보지 않기
 
 
@@ -1431,7 +1433,7 @@ df_train.head()
 
 
 
-### 3.1 Churn
+## 3.1 Churn
 
 
 ```python
@@ -1470,7 +1472,7 @@ plt.show()
 * 이탈(churn)에 해당하는 레코드는 26%다.
 * 이탈과 다른 특성들은 어떤 관계를 가지는지 살펴보자.
 
-### 3.2 Gender
+## 3.2 Gender
 
 
 ```python
@@ -1497,7 +1499,7 @@ print('Male ratio: {:.2f}%, Female ratio: {:.2f}%'.format(len(df_male) / len(df_
 * 데이터셋 내 성비는 밸런스가 잘 맞는다.
     * 성별에 따라 churn 비율의 차이는 또한 적다.
 
-### 3.3 Demographic
+## 3.3 Demographic
 * seniorcitizen, partner, dependents
 
 
@@ -1549,7 +1551,7 @@ churnplot(df_train, 'dependents', ax[2])
 * 시니어일 경우, churn rate가 높다.
 * 배우자나 자식이 있는 경우에는 churn rate가 상대적으로 낮다.
 
-### 3.4 Tenure
+## 3.4 Tenure
 * 계약 기간과 chunrate간의 관계를 파악해보자.
 
 
@@ -1763,7 +1765,7 @@ plt.show()
 
 * 이탈 고객의 경우 계약 기간이 짧은 것을 확인할 수 있다.
 
-### 3.5 Services & contracts
+## 3.5 Services & contracts
 * phoneservice, multiplelines, onlinesecurity, onlinebackup, deviceprotection, techsupport, streamingtv, streamingmovies, paperlessbilling, contract(cat), internetservice(cat)
 
 
@@ -1823,7 +1825,7 @@ plt.show()
 * 특이한 점은, 통지서 없이 이용하는 고객의 churnrate가 높았다.
 * 그리고 월별 계약자가 가장 많았는데, churnrate 또한 세 지불 형태 중 가장 높았다.
 
-### 3.6 Charges
+## 3.6 Charges
 * monthlycharges, totalcharges
 * 비용의 분포를 살펴보고,
 * churn에 따른 비용 변화와
@@ -2250,7 +2252,7 @@ df_train.head()
 
 
 
-### 3.7 Correlation
+## 3.7 Correlation
 * 각 컬럼간 상관 관계를 살펴보자.
 
 
@@ -2374,11 +2376,11 @@ plt.show()
 * 배우자 여부와 계약 기간이 양의 상관관계가 있다.
 * 기간(tenure)과 churn 간 음의 상관관계가 존재한다.
 
-## 4. Feature Engineering
+# 4. Feature Engineering
 * 일단 totalcharges와 monthlycharges, tenure를 스케일링해주자.
 * 그 후 범주형 데이터를 원핫인코딩하자.
 
-### 4.1 Scaling
+## 4.1 Scaling
 
 
 ```python
@@ -2522,7 +2524,7 @@ df_train.head(3)
 
 
 
-### 4.2 One_hot_encoding
+## 4.2 One_hot_encoding
 * 모델링을 위해 원핫인코딩을 진행하자.
 
 
@@ -2737,7 +2739,7 @@ df_test.info()
     memory usage: 302.2+ KB
 
 
-## 5. Modeling
+# 5. Modeling
 * 많은 모델들을 시도해볼 수 있겠지만, 데이터가 적고, 피처도 많은 편은 아니다.
 * 또한, 이탈 고객 관련 업무는 마케팅팀, 전략팀 등과 커뮤니케이션 해야 할 일이 많을것이므로,
     * Tree나 Randomforest 등 보다 비교적 설명하기 쉬운 LogisticRegressor를 사용하여 모델링을 진행해보겠다.
@@ -2873,13 +2875,13 @@ X_train.head(2)
 
 
 
-### 5.1 측정 지표
+## 5.1 측정 지표
 * 측정 지표를 정하기 전에, 목적을 생각해보아야한다.
 * 이탈 고객 모델링은, 이탈이라고 예측되어지는 고객에게 마케팅 메시지를 보내어 이탈을 방지하는 것이 목적이다.
 * 그러므로, 실제 이탈 고객을 얼마나 많이 찾아내는가가 중요하다.
 * 따라서, **재현율(recall), f1score**를 지표로 사용해보겠다.
 
-### 5.2 Baseline
+## 5.2 Baseline
 * 튜닝 없이 바로 모델에 넣어서 성능을 확인해보자.
 
 
@@ -2938,7 +2940,7 @@ recall_score(y_test, y_pred)
 * 테스트 세트에서도 당연히 좋지 않은 성능을 보이고 있다.
 * Feature Selection을 통해 중요도가 낮은 특성을 제외시켜보자.
 
-### 5.3 Feature Selection
+## 5.3 Feature Selection
 * 피처 선택 방법엔 많은 방법이 있지만, RandomForest에서 제공하는 feature_importance_를 통해 진행해보자.
 
 
@@ -3010,7 +3012,7 @@ print_score(y_train, y_pred)
 * 불필요한 특성들을 제거하니 오히려 성능이 떨어졌다.
 * 이번에는 lable의 가중치와 C값을 변화시켜 성능을 올려보자.
 
-### 5.4 Class_wight, C
+## 5.4 Class_wight, C
 * Churn의 0과 1의 비율은 약 7.5:2.5 였다.
 * 이를 반영하여 모델에 적용시켜서 성능을 확인해보자.
 
@@ -3063,7 +3065,7 @@ confusion_matrix(y_train, y_pred)
 
 * 모델에 규제를 적용하니, 재현율은 0.89로 높아지나, 정밀도와 f1점수가 낮아진다.
 
-### 5.5 GridSearch
+## 5.5 GridSearch
 * 그리드서치를 통해 최적의 C, Class_weight 값을 찾아보자.
 
 
@@ -3723,7 +3725,7 @@ confusion_matrix(y_test, y_pred)
     * (핸즈온 머신러닝 책에서)
 * 실제의 이탈 고객을 약 69% 예측할 수 있는 모델을 만드는데에 성공했다.
 
-## 6. 비즈니스에 적용해본다면?
+# 6. 비즈니스에 적용해본다면?
 > 이 모델을 어떻게 적용할 수 있을까? 간단하게 생각해보자.
 
 * 특성 중 요금이 모델링에 중요한 영향을 끼쳤으므로, 가격 정책에 대해 검토해본다.
@@ -3742,7 +3744,7 @@ confusion_matrix(y_test, y_pred)
 * 그들이 실제로 이탈하지 않고 지속되고있는지 모니터링한다.
 * 지속적으로 유지보수하고 개선해나간다...
 
-### 6.1 현업에선..
+## 6.1 현업에선..
 * 운이 좋지 않은 이상, 이렇게 정제가 잘 되어있는 1차 데이터가 존재하지 않는다.
 * 그리고 어떤 특성들을 1차로 선택할 지 도메인지식이 많이 필요할것이다.
     * 그럼에도 고객데이터가 churn으로 나뉜 오픈 데이터셋은 많지 않아서 통신사 데이터를 활용하여 예측 모델을 만들어보았다.
