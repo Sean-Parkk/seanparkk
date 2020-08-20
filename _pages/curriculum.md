@@ -7,7 +7,7 @@ layout: single
 {:.no_toc}
 
 
-**마지막 수정일: 2020.06.17**
+**마지막 수정일: 2020.08.20**
 
 > 데이터 분석가가 되기 위해 공부한 커리큘럼을 정리한 페이지  
 > 도서를 제외하면 대부분 무료 온라인 강의로 구성되어있다.
@@ -156,7 +156,7 @@ layout: single
 * 수학의 정석
   * 일단 수학의 정석으로 고등수학을 다시 복습하고있다. 추후 미분까지 쭉 나갈 예정.
 * [Edwith MOOC) 주재걸 교수님의 인공지능을 위한 선형대수]
-  * 기계학습의 관점에서 선형대수를 알기 쉽게 설명해주신다.
+  * 기계학습의 관점에서 선형대수를 알기 쉽게 설명해주신다. 중간정도 들었는데, 내용이 빨라서 다른 도서와 강의를 먼저 듣고 다시 들을 예정.
 * [Khan Academy MOOC) Salman Khan 선생님의 선형대수학](https://ko.khanacademy.org/math/linear-algebra)
   * 영어지만 한글 자막이 있다.
 * [임성빈 강사님의 선형대수 자료](https://www.slideshare.net/ssuser7e10e4?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
