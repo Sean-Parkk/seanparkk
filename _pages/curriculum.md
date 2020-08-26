@@ -157,10 +157,6 @@ layout: single
   * 일단 수학의 정석으로 고등수학을 다시 복습하고있다. 추후 미분까지 쭉 나갈 예정.
 * [Edwith MOOC) 주재걸 교수님의 인공지능을 위한 선형대수]
   * 기계학습의 관점에서 선형대수를 알기 쉽게 설명해주신다. 중간정도 들었는데, 내용이 빨라서 다른 도서와 강의를 먼저 듣고 다시 들을 예정.
-* [Khan Academy MOOC) Salman Khan 선생님의 선형대수학](https://ko.khanacademy.org/math/linear-algebra)
-  * 영어지만 한글 자막이 있다.
-* [임성빈 강사님의 선형대수 자료](https://www.slideshare.net/ssuser7e10e4?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
-* 선형대수는 나도 아직 공부를 깊게 하지 못해서, 링크만 올려둔다..!
 
 ## 9. 데이터 분석 프로젝트
 *공부한 내용을 활용해보기*
