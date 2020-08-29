@@ -33,7 +33,6 @@ toc: True
 * 학기가 끝나고, 교재를 바라보며 나는 선형대수학과 작별을 고했다. (라고 생각했다.)
   * 당시 교재
     * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/3B1B_review/image1.jpg?raw=true)
-    * ![image](https://github.com/Sean-Parkk/seanparkk/blob/master/assets/images/3B1B_review/image2.jpg?raw=true)
 
 ## 그렇게 8년이 지났다.
 * 잊고 살던 선형대수학이 다시 내 앞에 나타났다.
@@ -99,7 +98,7 @@ toc: True
     * 역시... 뒤로 갈수록 조회수가 낮아지는 경향이 보인다.
   * 단순히 완강률을
     * $마지막 강의 시청수 / 첫 강의 시청수$ 로 계산하면, **19%** 다.
-  * 그래도 난 81%에 들었네 ㅠㅠ 포기하지 말자!
+  * 그래도 난 19%에 들었네 ㅠㅠ 포기하지 말자!
 
 - - - - -
 * 앞으로 공부할 것은,
