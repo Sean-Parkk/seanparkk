@@ -3,6 +3,7 @@ title: "Curriculum"
 permalink: /curriculum/
 layout: single
 toc: True
+toc_sticky: true
 ---
 # 나만의 데이터 사이언스 커리큘럼
 
