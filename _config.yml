@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "서울숲 미세먼지"
-  avatar           : "/assets/images/avatar.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/assets/images/avatar2.png" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "To be a **Data Analyst**"
   location         : "Seoul"
   email            : "Email"
