@@ -11,6 +11,7 @@ tags:
 
 use_math: True
 toc: True
+toc_sticky: true
 ---
 > 3Blues1Brown강의 후기 (정리 아님)
 
