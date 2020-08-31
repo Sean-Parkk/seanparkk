@@ -24,6 +24,8 @@ toc_sticky: true
   * ![이미지](/assets/images/statistics_light/bookcover.jpg)
   * *(당근마켓에서 5천원에 구매했다)*
 
+- - - - - -
+
   # 상관관계
 
   - 두 변수의 관계가 얼마나 강한지 측정
