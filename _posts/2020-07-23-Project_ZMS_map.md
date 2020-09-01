@@ -89,10 +89,10 @@ use_math: True
     2. 하지만 같은 평점이어도, **평가 수가 더 많으면 신뢰가 높다.**
     3. 평점이 높다면, 어떤 것들이 괜찮은지 **자세히 보기 위해 리뷰를 확인한다.**
   * 그래서 ZMS의 수식은 이렇게 세웠다.
-    * $ZMS = 0\_100\_scaler(score * log(eval\_ cnt) + min\_max\_scaler(log(review\_ cnt+1)))$
+    * $ZMS = 0\_100\_scaler(score * log(evalcnt) + min\_max\_scaler(log(reviewcnt+1)))$
       * $score$: 평점
-      * $eval\_cnt$: 평가 수
-      * $review\_cnt$: 리뷰 수
+      * $evalcnt$: 평가 수
+      * $reviewcnt$: 리뷰 수
     * 평가 수와 평점에 로그를 씌운 이유는 정규분포에 따르게 하기 위함 + 스케일에 대한 규제를 하기 위함이다.
     * 리뷰 수는 가산점의 역할을 하기 위해 0~1 범위로 스케일링하였다.
     * 이렇게 나온 수치를 0~100범위 내에 다시 스케일링하였다.
