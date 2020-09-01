@@ -89,7 +89,7 @@ use_math: True
     2. 하지만 같은 평점이어도, **평가 수가 더 많으면 신뢰가 높다.**
     3. 평점이 높다면, 어떤 것들이 괜찮은지 **자세히 보기 위해 리뷰를 확인한다.**
   * 그래서 ZMS의 수식은 이렇게 세웠다.
-    * $$ZMS = 0\_100\_scaler(score * log(eval\_cnt) + min\_max\_scaler(log(review\_cnt+1)))$$
+    * $ZMS = 0\_100\_scaler(score * log(eval\_cnt) + min\_max\_scaler(log(review\_cnt+1)))$
       * $score$: 평점
       * $eval\_cnt$: 평가 수
       * $review\_cnt$: 리뷰 수
