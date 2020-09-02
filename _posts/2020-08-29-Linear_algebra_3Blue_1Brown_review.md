@@ -13,7 +13,7 @@ use_math: True
 toc: True
 toc_sticky: true
 ---
-> 3Blues1Brown강의 후기 (정리 아님)
+> 3Blue1Brown강의 후기 (정리 아님)
 
 * [강의 링크](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
 
