@@ -8,7 +8,7 @@ toc_sticky: true
 # 나만의 데이터 사이언스 커리큘럼
 
 
-**마지막 수정일: 2020.08.29**
+**마지막 수정일: 2020.09.15**
 
 > 데이터 분석가가 되기 위해 공부한 커리큘럼을 정리한 페이지  
 > 도서를 제외하면 대부분 무료 온라인 강의로 구성되어있다.
@@ -149,7 +149,14 @@ toc_sticky: true
 ## 8. 수학
 *수하아아아아아 아아아아악*
 * 수학의 정석
-  * 일단 수학의 정석으로 고등수학을 다시 복습하고있다. 추후 미분까지 쭉 나갈 예정.
+  * 미적분, 선형대수 등을 공부하기 위해 고등수학부터 다시 리뷰했다.
+  * 개념 위주로 공부했고, 문제는 조금씩 풀어봤다.(간단한 문제들 위주로)
+  * 수학(하), 수학(상), 수학 1 을 공부했다.
+    * 당근마켓에서 위 세 권을 총 8,000원에 샀다!!
+* [칸아카데미](https://www.khanacademy.org/math/calculus-1/cs1-limits-and-continuity)
+  * 고등수학부터 미적분, 선형대수 등 대학수학까지 무료로!! 공부할 수 있다.
+  * Precalculus 내 몇 과목을 리뷰했고, 현재는 미적분을 듣고있다.
+  * 참고로, 언어를 영어로 설정해야 더 많은 강의를 볼 수 있음!
 * [Edwith MOOC) 주재걸 교수님의 인공지능을 위한 선형대수](https://www.edwith.org/linearalgebra4ai/joinLectures/14072)
   * 기계학습의 관점에서 선형대수를 알기 쉽게 설명해주신다. 중간정도 들었는데, 내용이 빨라서 다른 도서와 강의를 먼저 듣고 다시 들을 예정.
 * [3Blue1Brown의 Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
