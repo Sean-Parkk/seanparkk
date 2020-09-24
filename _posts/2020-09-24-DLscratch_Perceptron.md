@@ -25,7 +25,7 @@ toc_sticky: true
 
     ![/assets/images/DLscratch/2/1.png](/assets/images/DLscratch/2/1.png)
 
-- $y=\begin{cases} 0\,(w_1x_1 + w_2x_2 \leq \theta) \\ 1\, (w_1x_1+w_2x_2>\theta) \end{cases}$
+- $$y=\begin{cases} 0\,(w_1x_1 + w_2x_2 \leq \theta) \\ 1\, (w_1x_1+w_2x_2>\theta) \end{cases}$$
 - $\theta$는 임계값
 
 ## 2.2 단순한 논리 회로
