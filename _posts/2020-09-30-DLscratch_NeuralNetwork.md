@@ -262,7 +262,7 @@ print(y)    # [0.31682708 0.69627909]
 
 - 위에서 구현한 함수는 컴퓨터로 계산 시, overflow 문제가 발생한다.
     - 지수함수의 계산값이 매우, 혹은 무한히 커지기 때문에 이 값들을 다시 나누면 불안정해진다.
-    - $y_k = \frac{\exp{(a_k)}}{\sum^n_{i=1}\exp{a_i}} = \frac{C\exp(a_k)}{C\sum^n_{i=1}\exp{(a_i)}} \\ = \frac{\exp(a_k+\log{C})}{\sum^n_{i=1}\exp{(a_i+\log{C})}}\\=\frac{\exp(a_k+C^`)}{\sum^n_{i=1}\exp{(a_i+C^`)}}$
+- $y_k =\frac{\exp{(a_k)}}{\sum^n_{i=1}\exp{a_i}}= \frac{C\exp(a_k)}{C\sum^n_{i=1}\exp{(a_i)}} \\ =\frac{\exp(a_k+\log{C})}{\sum^n_{i=1}\exp{(a_i+\log{C})}}\\=\frac{\exp(a_k+C^`)}{\sum^n_{i=1}\exp{(a_i+C^`)}}$
 
 - 위 수식을 통해, 오버플로 문제를 개선할 수 있다.
     - 일반적으로는 $C^`$에 입력 신호 중 최댓값을 이용하여 오버플로를 막는다.
@@ -317,7 +317,7 @@ print(np.sum(y))    # 1.0
 
     ![/assets/images/DLscratch/3/Untitled%2011.png](/assets/images/DLscratch/3/Untitled%2011.png)
 
-    - 입력 데이터는 100*784, 출력 데이터는 100*10 형태로 된다.
+    - 입력 데이터는 100 * 784, 출력 데이터는 100 * 10 형태로 된다.
     - 100장 분량 입력 데이터의 결과가 한 번에 출력되는 것을 나타내는데,
     - 이렇게 하나로 묶은 입력 데이터를 **배치(batch)**라고 한다.
 - 왜 배치로 입력해야할까?
