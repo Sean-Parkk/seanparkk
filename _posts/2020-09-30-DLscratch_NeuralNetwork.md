@@ -262,10 +262,10 @@ print(y)    # [0.31682708 0.69627909]
 
 - 위에서 구현한 함수는 컴퓨터로 계산 시, overflow 문제가 발생한다.
     - 지수함수의 계산값이 매우, 혹은 무한히 커지기 때문에 이 값들을 다시 나누면 불안정해진다.
-- $y_k =\frac{\exp{(a_k)}}{\sum^n_{i=1}\exp{a_i}}= \frac{C\exp(a_k)}{C\sum^n_{i=1}\exp{(a_i)}} \\ =\frac{\exp(a_k+\log{C})}{\sum^n_{i=1}\exp{(a_i+\log{C})}}\\=\frac{\exp(a_k+C^`)}{\sum^n_{i=1}\exp{(a_i+C^`)}}$
+- $y_k =\frac{\exp{(a_k)}}{\sum^n_{i=1}\exp{a_i}}= \frac{C\exp(a_k)}{C\sum^n_{i=1}\exp{(a_i)}} \\ =\frac{\exp(a_k+\log{C})}{\sum^n_{i=1}\exp{(a_i+\log{C})}}\\=\frac{\exp(a_k+C^,)}{\sum^n_{i=1}\exp{(a_i+C^,)}}$
 
 - 위 수식을 통해, 오버플로 문제를 개선할 수 있다.
-    - 일반적으로는 $C^`$에 입력 신호 중 최댓값을 이용하여 오버플로를 막는다.
+    - 일반적으로는 $C^,$에 입력 신호 중 최댓값을 이용하여 오버플로를 막는다.
     - 이것을 반영하여 다시 코드로 구현하면 아래와 같다.
 
         ```python
