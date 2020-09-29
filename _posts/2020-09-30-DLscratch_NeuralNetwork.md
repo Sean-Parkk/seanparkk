@@ -63,12 +63,12 @@ toc_sticky: true
 
 ### 3.1.3 활성화 함수
 
-    - 위 식의 $h(x)$와 같이, 입력 신호의 총합을 출력 신호로 변환하는 함수를 일반적으로 **활성화 함수(avtivation function)**라 한다.
-        - 활성화라는 말에서 느껴지듯, 입력 신호의 총합이 활성화를 일으키는지 정하는 역할!
-    - 활성화 함수를 포함하여 처리 과정을 시각적으로 살펴보자.
-        - 일단 수식부터
-            - $a=b+w_1x_1+w_2x_2$
-            - $y=h(a)$
+- 위 식의 $h(x)$와 같이, 입력 신호의 총합을 출력 신호로 변환하는 함수를 일반적으로 **활성화 함수(avtivation function)**라 한다.
+    - 활성화라는 말에서 느껴지듯, 입력 신호의 총합이 활성화를 일으키는지 정하는 역할!
+- 활성화 함수를 포함하여 처리 과정을 시각적으로 살펴보자.
+    - 일단 수식부터
+        - $a=b+w_1x_1+w_2x_2$
+        - $y=h(a)$
 
         ![/assets/images/DLscratch/3/Untitled%203.png](/assets/images/DLscratch/3/Untitled%203.png)
 
@@ -86,7 +86,7 @@ toc_sticky: true
 
 - 신경망에서 자주 이용하는 활성화 함수인 시그모이드 함수의 식은 아래와 같다.  
 (*모두의 딥러닝 - 로지스틱 회귀 파트 공부할 때 갑자기 나와서 당황했던 기억*)
-  * $$h(x) = \frac{1}{1+exp(-x)}$$
+  * $h(x) = \frac{1}{1+exp(-x)}$
 
     - $exp(-x)$는 $e^{-x}$를 뜻하며, $e$는 자연 상수 $2.7182...$의 값을 갖는 실수이다.
         - **[자연 상수란?](https://angeloyeo.github.io/2019/09/04/natural_number_e.html)**
@@ -243,7 +243,7 @@ print(y)    # [0.31682708 0.69627909]
         ![/assets/images/DLscratch/3/Untitled%208.png](/assets/images/DLscratch/3/Untitled%208.png)
 
 - 소프트맥스 함수(softmax function)
-  - $$y_k = \frac{\exp{(a_k)}}{\sum^n_{i=1}{\exp{(a_i)}}}$$
+  - $y_k = \frac{\exp{(a_k)}}{\sum^n_{i=1}{\exp{(a_i)}}}$
 
     ![/assets/images/DLscratch/3/Untitled%209.png](/assets/images/DLscratch/3/Untitled%209.png)
 
@@ -262,7 +262,7 @@ print(y)    # [0.31682708 0.69627909]
 
 - 위에서 구현한 함수는 컴퓨터로 계산 시, overflow 문제가 발생한다.
     - 지수함수의 계산값이 매우, 혹은 무한히 커지기 때문에 이 값들을 다시 나누면 불안정해진다.
-    - $$y_k = \frac{\exp{(a_k)}}{\sum^n_{i=1}\exp{a_i}} = \frac{C\exp(a_k)}{C\sum^n_{i=1}\exp{(a_i)}} \\ = \frac{\exp(a_k+\log{C})}{\sum^n_{i=1}\exp{(a_i+\log{C})}}\\=\frac{\exp(a_k+C^`)}{\sum^n_{i=1}\exp{(a_i+C^`)}}$$
+    - $y_k = \frac{\exp{(a_k)}}{\sum^n_{i=1}\exp{a_i}} = \frac{C\exp(a_k)}{C\sum^n_{i=1}\exp{(a_i)}} \\ = \frac{\exp(a_k+\log{C})}{\sum^n_{i=1}\exp{(a_i+\log{C})}}\\=\frac{\exp(a_k+C^`)}{\sum^n_{i=1}\exp{(a_i+C^`)}}$
 
 - 위 수식을 통해, 오버플로 문제를 개선할 수 있다.
     - 일반적으로는 $C^`$에 입력 신호 중 최댓값을 이용하여 오버플로를 막는다.
