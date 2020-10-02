@@ -412,12 +412,12 @@ toc_sticky: true
 ### 4.4.2 신경망에서의 기울기
 
 - 신경망에서의 기울기는 가중치 매개변수에 대한 손실 함수의 기울기를 뜻한다.
-    - 예를 들어, 가중치가 $\bold{W}$, 손실 함수가 $L$인 신경망이 있다면,
-    - 경사는 $\frac{\partial{L}}{\partial{\bold{W}}}$로 나타낼 수 있다.
-        - $\frac{\partial L}{\partial \bold{W}}_{(1,1)} = \frac{\partial L}{\partial w_{11}}$, $\frac{\partial L}{\partial \bold{W}}_{(1,2)} = \frac{\partial L}{\partial w_{12}}...$
+    - 예를 들어, 가중치가 $\bf{W}$, 손실 함수가 $L$인 신경망이 있다면,
+    - 경사는 $\frac{\partial{L}}{\partial{\bf{W}}}$로 나타낼 수 있다.
+        - $\frac{\partial L}{\partial \bf{W}}_{(1,1)} = \frac{\partial L}{\partial w_{11}}$, $\frac{\partial L}{\partial \bf{W}}_{(1,2)} = \frac{\partial L}{\partial w_{12}}...$
         - 경사 행렬의 각 원소는 각각의 원소에 관한 편미분이며,
         - $w_{11}$을 조금 변경했을 때 $L$이 얼마나 변화하느냐를 나타낸다.
-    - $\bold{W}$와 $\frac{\partial{L}}{\partial{\bold{W}}}$의 형상은 동일하다.
+    - $\bf{W}$와 $\frac{\partial{L}}{\partial{\bf{W}}}$의 형상은 동일하다.
 
 ```python
 f = lambda w: net.loss(x, t)
@@ -433,8 +433,8 @@ array([[ 0.07867118, -0.11764071,  0.03896953],
 - 자세한 코드는 생략하고, 경사 행렬을 살펴보자.
     - 배열의 (1,1)은 약 0.07로, $w_{11}$를 $h$만큼 증가시키면 0.07만큼 손실 함수가 증가한다는 뜻이다.
     - (1,2)는 약 -0.11로, $w_{12}$를 $h$만큼 증가시키면 -0.11만큼 손실 함수가 감소한다는 뜻이다.
-    - 손실 함수를 줄인다는 관점에서는, $\frac{\partial L}{\partial \bold{W}}$의 값 중 양수 값은 음의 방향으로, 음수 값은 양의 방향으로 갱신하면 된다.
-    - 또한, 갱신되는 양에는 $\frac{\partial L}{\partial \bold{W}}$의 절대값으로 기여하므로, $w_{11}$보다 $w_{12}$가 더 크게 기여한다.
+    - 손실 함수를 줄인다는 관점에서는, $\frac{\partial L}{\partial \bf{W}}$의 값 중 양수 값은 음의 방향으로, 음수 값은 양의 방향으로 갱신하면 된다.
+    - 또한, 갱신되는 양에는 $\frac{\partial L}{\partial \bf{W}}$의 절대값으로 기여하므로, $w_{11}$보다 $w_{12}$가 더 크게 기여한다.
 - 신경망의 기울기를 구한 다음에는 경사법에 따라 가중치 매개변수를 갱신하기만 하면 된다.
 
 ## 4.5 학습 알고리즘 구현하기
