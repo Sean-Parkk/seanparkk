@@ -414,7 +414,6 @@ toc_sticky: true
 - 신경망에서의 기울기는 가중치 매개변수에 대한 손실 함수의 기울기를 뜻한다.
     - 예를 들어, 가중치가 $\bf{W}$, 손실 함수가 $L$인 신경망이 있다면,
     - 경사는 $\frac{\partial{L}}{\partial{\bf{W}}}$로 나타낼 수 있다.
-        - $\frac{\partial L}{\partial \bf{W}}_{(1,1)} = \frac{\partial L}{\partial w_{11}}$, $\frac{\partial L}{\partial \bf{W}}_{(1,2)} = \frac{\partial L}{\partial w_{12}}...$
         - 경사 행렬의 각 원소는 각각의 원소에 관한 편미분이며,
         - $w_{11}$을 조금 변경했을 때 $L$이 얼마나 변화하느냐를 나타낸다.
     - $\bf{W}$와 $\frac{\partial{L}}{\partial{\bf{W}}}$의 형상은 동일하다.
