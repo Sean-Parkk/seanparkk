@@ -1,6 +1,6 @@
 ---
-title:  "오차역전파법이란?"
-excerpt: "밑바닥부터 시작하는 딥러닝 5장"
+title:  "신경망 학습 관련 기술들을 살펴보자."
+excerpt: "밑바닥부터 시작하는 딥러닝 6장"
 
 categories:
   - study
