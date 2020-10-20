@@ -1,5 +1,5 @@
 ---
-title:  "이미지 분석 위해 꼭 알아야하는 CNN"
+title:  "합성곱 신경망 CNN에 대해"
 excerpt: "밑바닥부터 시작하는 딥러닝 7장"
 
 categories:
