@@ -28,7 +28,7 @@ toc_sticky: true
     - 이를 완전연결(fully-connected, 전결합)이라고 하며, 이는 Affine 계층으로 구현했다.
 - CNN의 구조를 그림으로 살펴보자.
 
-    ![/assets/images/DLscratch/7//Untitled.png](/assets/images/DLscratch/7//Untitled.png)
+    ![/assets/images/DLscratch/7/Untitled.png](/assets/images/DLscratch/7/Untitled.png)
 
     - Conv-ReLU-(Pooling) 흐름으로 연결된다. (풀링 계층은 생략하기도 함)
     - 또한 출력에 가까운 층에서는 앞선 신경망과 같이 Affine-ReLU, Affine-Softmax 조합을 그대로 사용한다.
@@ -59,19 +59,19 @@ toc_sticky: true
     - 윈도우에 해당되는 입력데이터 값과 필터를 곱하여 이 값들의 총합을 구한다.
     - **단일 곱셈-누산(fused multiply-add, FMA)**라고 한다.
 
-        ![/assets/images/DLscratch/7//Untitled%201.png](/assets/images/DLscratch/7//Untitled%201.png)
+        ![/assets/images/DLscratch/7/Untitled%201.png](/assets/images/DLscratch/7/Untitled%201.png)
 
     - 위 예에서, 입력은 (4,4), 필터는 (3,3), 출력은 (2,2)가 된다.
 - CNN에선 필터의 매개변수가 가중치에 해당하고,(완전연결에서의 기울기) 편향 또한 존재한다.
 - 편향까지 포함한 계산 과정
 
-    ![/assets/images/DLscratch/7//Untitled%202.png](/assets/images/DLscratch/7//Untitled%202.png)
+    ![/assets/images/DLscratch/7/Untitled%202.png](/assets/images/DLscratch/7/Untitled%202.png)
 
 ### 7.2.3 패딩
 
 - 합성곱 연산을 하기 전, 입력 데이터의 테두리에 특정 값(0 등)을 채워넣는 것을 패딩이라고 한다.
 
-    ![/assets/images/DLscratch/7//Untitled%203.png](/assets/images/DLscratch/7//Untitled%203.png)
+    ![/assets/images/DLscratch/7/Untitled%203.png](/assets/images/DLscratch/7/Untitled%203.png)
 
 - 패딩을 하는 이유
     - 위에서 본 것처럼 입력 데이터와 필터와 합성곱 연산을 하면 출력 데이터의 형태가 축소된다.
@@ -83,7 +83,7 @@ toc_sticky: true
 - 필터를 적용하는 윈도우가 얼마나 움직이는지를 결정한다.
     - 스트라이드를 키우면 출력 크기는 작아지고, 스트라이드를 줄이면 출력 크기가 커진다.
 
-    ![/assets/images/DLscratch/7//Untitled%204.png](/assets/images/DLscratch/7//Untitled%204.png)
+    ![/assets/images/DLscratch/7/Untitled%204.png](/assets/images/DLscratch/7/Untitled%204.png)
 
 - 살펴본 것처럼 패딩과 스트라이드를 통해 출력 크기를 조절할 수 있다.
     - 그럼 패딩, 스트라이드와 입력 크기, 출력 크기 간의 관계를 수식화해보자.
@@ -98,24 +98,24 @@ toc_sticky: true
     - 각 채널에 대응하는 필터가 있고, (대응하려면 입력데이터의 채널 수와 필터 채널수가 같아야함)
     - 채널간 합성곱한 결과를 더하여 출력함.
 
-        ![/assets/images/DLscratch/7//Untitled%205.png](/assets/images/DLscratch/7//Untitled%205.png)
+        ![/assets/images/DLscratch/7/Untitled%205.png](/assets/images/DLscratch/7/Untitled%205.png)
 
 ### 7.2.6 블록으로 생각하기
 
 - 3차원 합성곱 연산을 직육면체 블록이라고 생각해보자.
 
-    ![/assets/images/DLscratch/7//Untitled%206.png](/assets/images/DLscratch/7//Untitled%206.png)
+    ![/assets/images/DLscratch/7/Untitled%206.png](/assets/images/DLscratch/7/Untitled%206.png)
 
     - C개의 채널을 가진 입력 데이터와 필터를 합성곱하면, 1개의 채널을 가진 출력 데이터가 나온다.
     - 출력 데이터에서도 여러개의 채널을 가지게 하려면 어떻게 해야할까?
         - 필터를 여러개 사용하면 됨!
 
-            ![/assets/images/DLscratch/7//Untitled%207.png](/assets/images/DLscratch/7//Untitled%207.png)
+            ![/assets/images/DLscratch/7/Untitled%207.png](/assets/images/DLscratch/7/Untitled%207.png)
 
         - 즉, 필터의 수가 출력 데이터의 채널 수가 된다.
 - 편향까지의 계산 과정을 그림으로 그리면 아래와 같다.
 
-    ![/assets/images/DLscratch/7//Untitled%208.png](/assets/images/DLscratch/7//Untitled%208.png)
+    ![/assets/images/DLscratch/7/Untitled%208.png](/assets/images/DLscratch/7/Untitled%208.png)
 
     - 편향 계산은 넘파이의 브로드캐스트 기능으로 쉽게 구현된다.
 
@@ -129,7 +129,7 @@ toc_sticky: true
 
 - 풀링은 공간을 줄이는 연산이다.
 
-    ![/assets/images/DLscratch/7//Untitled%209.png](/assets/images/DLscratch/7//Untitled%209.png)
+    ![/assets/images/DLscratch/7/Untitled%209.png](/assets/images/DLscratch/7/Untitled%209.png)
 
     - 위 예는 2x2 최대 풀링(max pooling)을 스트라이드 2로 처리하는 순서이다.
     - 2x2 영역이 스트라이드 단위로 움직이며(필터의 윈도우처럼) 가장 큰 값만(max) 꺼낸다.
@@ -156,7 +156,7 @@ toc_sticky: true
 
 - 합성곱 계층 필터의 이미지를 살펴보자.
 
-    ![/assets/images/DLscratch/7//Untitled%2010.png](/assets/images/DLscratch/7//Untitled%2010.png)
+    ![/assets/images/DLscratch/7/Untitled%2010.png](/assets/images/DLscratch/7/Untitled%2010.png)
 
     - 학습 전에는 패턴이 없지만, 학습 후에는 어떤 패턴처럼 보이는 규칙들이 생성되었다.
     - 색이 바뀌는 필터(에지)와 덩어리진 영역(블롭) 등과 같은 정보를 추출해낸다.
@@ -172,7 +172,7 @@ toc_sticky: true
     - 10번째 층에서는 사물의 카테고리
     - 와 같이 점차 의미를 이해해나가는 것처럼 학습해나간다.
 
-    ![/assets/images/DLscratch/7//Untitled%2011.png](/assets/images/DLscratch/7//Untitled%2011.png)
+    ![/assets/images/DLscratch/7/Untitled%2011.png](/assets/images/DLscratch/7/Untitled%2011.png)
 
 ## 7.5 대표적인 CNN
 
