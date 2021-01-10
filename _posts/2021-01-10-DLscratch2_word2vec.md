@@ -125,8 +125,6 @@ cross entropy loss의 수식은 $E=-\sum_k{t_k\log{y_k}}$다. 여기서 $t_k$는
 
 $\text{L}=-\log{P(w_{t}\mid{}w_{t-1},w_{t+1})}$로 loss의 식을 간편하게 표현할 수 있다. 사실 CBOW가 모델링하고 있는 식에 log를 씌운 후, 음수를 취하면 된다. 이것을 음의 로그 가능도(negative log likelihood)라고 한다.
 
-이를 말뭉치 전체로 확장하면, 식은 $\text{L}=-\frac{1}{T}\sum^{T}_{t=1}{-\log{P(w_{t}\mid{}w_{t-1},w_{t+1})}}$로 나타낼 수 있다.
-
 - 식을 간단히 설명하면 타겟을 바꿔가며 loss를 구하고 이를 평균내는 것
 - 확률 관점에서 어떻게 표현했는지를 참고하여 공부하기
 
