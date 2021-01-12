@@ -16,4 +16,4 @@ toc_sticky: true
 ---
 
 # 왜?
-Distinguish whether the mask is correctly worn
+코로나 시대에 살고있다. 
