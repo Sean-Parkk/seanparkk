@@ -16,7 +16,7 @@ tags:
 
 일을 할 때, 혹은 단순히 이야기를 할 때에도 '**지표**'라는 이야기는 정말 많이 나온다. 경제 지표, 성과 지표, 비즈니스 지표, 핵심 지표... 그리고 경영학과를 나온 사람들은 한 번 씩은 다 들어봤을 법한 이야기도 있다.
 
-![/assets/images/growthhacking_inflearn/2/Untitled.png](/assets/images/growthhacking_inflearn/2/Untitled.png)
+![/assets/images/growthhacking_inflearn/2/Untitled.png](/assets/images/growthhacking_inflearn/2/Untitled.png){: width="40%" height="40%"}{: .center}
 
 > "측정할 수 없다면 관리할 수 없다."
 
@@ -42,7 +42,7 @@ tags:
 
 예시를 들어보자.
 
-![/assets/images/growthhacking_inflearn/2/FC097EA1-A16B-4868-9100-789C820774D7_1_105_c.jpeg](/assets/images/growthhacking_inflearn/2/FC097EA1-A16B-4868-9100-789C820774D7_1_105_c.jpeg)
+![/assets/images/growthhacking_inflearn/2/FC097EA1-A16B-4868-9100-789C820774D7_1_105_c.jpeg](/assets/images/growthhacking_inflearn/2/FC097EA1-A16B-4868-9100-789C820774D7_1_105_c.jpeg){: width="40%" height="40%"}{: .center}
 
 *반려견 용품을 파는 가상의 e커머스, A브랜드가 있다고 생각해보자. A브랜드의 데이터 분석가는 반려견 옷을 구경하다가 나간 고객은 얼마나 되는지 궁금해졌다. 그래서 페이지에 대한 **페이지 이탈률**을 살펴보았고, 이탈률은 60%였다. 여기서 한 단계 더 나아가서, **20대와 30대의 이탈률**이 궁금해졌고, 조사해보니 각각 80%, 30%인 것을 알 수 있었다.* 
 
@@ -67,7 +67,7 @@ tags:
 
 ## 허상 지표의 늪
 
-![/assets/images/growthhacking_inflearn/2/unnamed.jpg](/assets/images/growthhacking_inflearn/2/unnamed.jpg)
+![/assets/images/growthhacking_inflearn/2/unnamed.jpg](/assets/images/growthhacking_inflearn/2/unnamed.jpg){: .center}
 
 위의 예시를 보면 '저렇게 일하는 사람이 어딨어~' 하겠지만... 나는 허상 지표의 늪에 발을 많이 담궜었다. 이전에 데이터에 대한 지식이 많지 않았을 시절, 회사에서 KPI관리를 맡았던 적이 있다. 
 
@@ -101,7 +101,7 @@ tags:
 
 지표들을 선정했다면 이번에는 개선해야 하는 **목표 지표**를 정해보자. 이제 이 목표 지표들을 실험을 통해 단계적으로 개선해나가는 작업을 통해 관리한다.
 
-![/assets/images/growthhacking_inflearn/2/Untitled%201.png](/assets/images/growthhacking_inflearn/2/Untitled%201.png)
+![/assets/images/growthhacking_inflearn/2/Untitled%201.png](/assets/images/growthhacking_inflearn/2/Untitled%201.png){: width="70%" height="70%"}{: .center}
 
 *A브랜드의 데이터 분석가는 이제 고객이 사이트에 유입된 후 어떤 단계를 거치는지 파악했다. 여러 단계 중, 분석가는 '가입' 단계에서 '가입 전환율'을 목표 지표로 삼았다. 이를 개선하기 위해, [가입하기] 버튼의 위치를 좀 더 잘 보이는 위치로 바꿔 A/B테스트를 진행하였다. 일주일 후, 변경한 위치가 유의미한 수준으로 향상되었다는 것을 확인하였고, 변경사항을 적용하였다. 이후, 가입 전환율은 기존보다 개선되는 것을 확인할 수 있었다!*
 
